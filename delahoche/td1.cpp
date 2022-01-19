@@ -1,7 +1,5 @@
 #include <cmath>
-#include <cstdlib>
 #include <iostream>
-#include <math.h>
 
 class point{
 	private:
