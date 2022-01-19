@@ -1,0 +1,25 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+cartesian	delahoche/td1.cpp	/^void point::cartesian(){$/;"	f	class:point
+carx	delahoche/td1.cpp	/^		 double carx,cary;$/;"	m	class:point	file:
+cary	delahoche/td1.cpp	/^		 double carx,cary;$/;"	m	class:point	file:
+display	delahoche/td1.cpp	/^void point::display(){$/;"	f	class:point
+homothetie	delahoche/td1.cpp	/^void point::homothetie(double nb){$/;"	f	class:point
+init	delahoche/td1.cpp	/^void point::init(double px,double py){$/;"	f	class:point
+main	delahoche/td1.cpp	/^int main()$/;"	f
+move	delahoche/td1.cpp	/^void point::move(double dx, double dy){$/;"	f	class:point
+point	delahoche/td1.cpp	/^class point{$/;"	c	file:
+point	delahoche/td1.cpp	/^point::point(){$/;"	f	class:point
+point	delahoche/td1.cpp	/^point::point(double p){$/;"	f	class:point
+point	delahoche/td1.cpp	/^point::point(double px,double py){$/;"	f	class:point
+polar	delahoche/td1.cpp	/^void point::polar(){$/;"	f	class:point
+rho	delahoche/td1.cpp	/^		 double rho,theta;$/;"	m	class:point	file:
+rotate	delahoche/td1.cpp	/^void point::rotate(double alpha){$/;"	f	class:point
+theta	delahoche/td1.cpp	/^		 double rho,theta;$/;"	m	class:point	file:
+x	delahoche/td1.cpp	/^		 double x,y;$/;"	m	class:point	file:
+y	delahoche/td1.cpp	/^		 double x,y;$/;"	m	class:point	file:
+~point	delahoche/td1.cpp	/^point::~point(){$/;"	f	class:point

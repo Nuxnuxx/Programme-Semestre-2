@@ -106,7 +106,10 @@ void point::display(){
 int main()
 {
 	point a;
-	a.init(10,10);
+	double x,y;
+	std::cin >> x >> y ;
+
+	a.init(x,y);
 	a.display();
 	a.rotate(90);
 	a.display();
