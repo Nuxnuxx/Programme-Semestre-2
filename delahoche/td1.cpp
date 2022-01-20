@@ -1,4 +1,5 @@
 #include <cmath>
+#include <string>
 #include <iostream>
 
 class point{
@@ -27,16 +28,21 @@ class point{
 		 void rotate(double);
 };
 
+
 point::point(){
 	std::cout << "Constructeur" << std::endl;
 	x = 0;
 	y = 0;
+	polar();
+	cartesian();
 }
 
 point::point(double p){
 	std::cout << "Constructeur" << std::endl;
 	x = p;
 	y = p;
+	polar();
+	cartesian();
 }
 
 point::point(double px,double py){
