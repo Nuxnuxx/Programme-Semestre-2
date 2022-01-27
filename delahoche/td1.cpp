@@ -1,4 +1,5 @@
 #include <cmath>
+#include <math.h>
 #include <string>
 #include <iostream>
 
@@ -39,8 +40,7 @@ point::point(){
 
 point::point(double p){
 	std::cout << "Constructeur" << std::endl;
-	x = p;
-	y = p;
+	x = y = p;
 	polar();
 	cartesian();
 }
@@ -80,19 +80,19 @@ void point::homothetie(double nb){
 }
 
 void point::polar(){
-	rho = sqrtf(x*x + y*y);
-	theta = atan2(x, y);
+	rho = sqrt(x*x + y*y);
+	theta = atan2(x,y);
 }
 
 
 void point::cartesian(){
 	carx = rho * cos(theta);
-	cary = theta * sin(theta);
+	cary = rho * sin(theta);
 }
 
 void point::rotate(double alpha){
-	x = rho * cos(theta);
-	y = rho * sin(theta);
+	x = x * cos(alpha) + y * sin(alpha);
+	y = y * cos(alpha) - x * sin(alpha);
 	polar();
 	cartesian();
 }
@@ -109,13 +109,22 @@ void point::display(){
 
 int main()
 {
-	point a;
-	double x,y;
-	std::cin >> x >> y ;
+	/* point a; */
+	/* double x,y; */
+	/* std::cin >> x >> y ; */
+	/* a.init(x,y); */
+	/* a.display(); */
+	/* a.rotate(90); */
+	/* a.display(); */
 
-	a.init(x,y);
-	a.display();
-	a.rotate(90);
-	a.display();
+	/*  Plusieur syntaxe : */
+	/*  point a(1,1); */
+	/*  point a = point(1,1); */
+	/* Quel changement */
+
+	point b(10,10);
+	b.display();
+	b.rotate(90);
+	b.display();
 	return 0;
 }
