@@ -4,14 +4,46 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Main	clecle/td1.cs	/^		static void Main(string[] args)$/;"	m	class:td1.td1	file:
+Main	clecle/td1sln/age/Program.cs	/^		static void Main(string[] args)$/;"	m	class:age.Program	file:
+Main	clecle/td1sln/demoPoitier/Program.cs	/^		static void Main(string[] args)$/;"	m	class:demoPoitier.Program	file:
+Main	clecle/td1sln/pain/Program.cs	/^		static void Main(string[] args)$/;"	m	class:pain.Program	file:
+N	delahoche/td2.cpp	3;"	d	file:
+Program	clecle/td1sln/age/Program.cs	/^	 class Program$/;"	c	namespace:age
+Program	clecle/td1sln/demoPoitier/Program.cs	/^	 class Program$/;"	c	namespace:demoPoitier
+Program	clecle/td1sln/pain/Program.cs	/^	 class Program$/;"	c	namespace:pain
+TestMethod1	clecle/td1sln/test/UnitTest1.cs	/^    public void TestMethod1()$/;"	m	class:UnitTest1
+UnitTest1	clecle/td1sln/test/UnitTest1.cs	/^public class UnitTest1$/;"	c
+addition	delahoche/td2-2.cpp	/^vecteur2 vecteur2::addition(vecteur2& v2){$/;"	f	class:vecteur2
+addition	delahoche/td2.cpp	/^vecteur1 vecteur1::addition(vecteur1& v2){$/;"	f	class:vecteur1
+age	clecle/td1sln/age/Program.cs	/^namespace age$/;"	n
 cartesian	delahoche/td1.cpp	/^void point::cartesian(){$/;"	f	class:point
 carx	delahoche/td1.cpp	/^		 double carx,cary;$/;"	m	class:point	file:
 cary	delahoche/td1.cpp	/^		 double carx,cary;$/;"	m	class:point	file:
+compt	delahoche/td2-2.cpp	/^void vecteur2::compt(){$/;"	f	class:vecteur2
+ctr	delahoche/td2-2.cpp	/^		static int ctr;$/;"	m	class:vecteur2	file:
+ctr	delahoche/td2-2.cpp	/^int vecteur2::ctr = 0;$/;"	m	class:vecteur2	file:
+demoPoitier	clecle/td1sln/demoPoitier/Program.cs	/^namespace demoPoitier$/;"	n
 display	delahoche/td1.cpp	/^void point::display(){$/;"	f	class:point
+display	delahoche/td2-2.cpp	/^void vecteur2::display(){$/;"	f	class:vecteur2
+display	delahoche/td2.cpp	/^void vecteur1::display(){$/;"	f	class:vecteur1
 homothetie	delahoche/td1.cpp	/^void point::homothetie(double nb){$/;"	f	class:point
+homothetie	delahoche/td2-2.cpp	/^void vecteur2::homothetie(int x){$/;"	f	class:vecteur2
+homothetie	delahoche/td2.cpp	/^void vecteur1::homothetie(int x){$/;"	f	class:vecteur1
 init	delahoche/td1.cpp	/^void point::init(double px,double py){$/;"	f	class:point
+initialise	delahoche/td2-2.cpp	/^void vecteur2::initialise(){$/;"	f	class:vecteur2
+initialise	delahoche/td2-2.cpp	/^void vecteur2::initialise(int x){$/;"	f	class:vecteur2
+initialise	delahoche/td2-2.cpp	/^void vecteur2::initialise(int x,float *y){$/;"	f	class:vecteur2
+initialise	delahoche/td2.cpp	/^void vecteur1::initialise(){$/;"	f	class:vecteur1
+initialise	delahoche/td2.cpp	/^void vecteur1::initialise(int x){$/;"	f	class:vecteur1
+initialise	delahoche/td2.cpp	/^void vecteur1::initialise(int x,float y[N]){$/;"	f	class:vecteur1
 main	delahoche/td1.cpp	/^int main()$/;"	f
+main	delahoche/td2-2.cpp	/^int main(){$/;"	f
+main	delahoche/td2.cpp	/^int main()$/;"	f
 move	delahoche/td1.cpp	/^void point::move(double dx, double dy){$/;"	f	class:point
+n	delahoche/td2-2.cpp	/^		int n;$/;"	m	class:vecteur2	file:
+n	delahoche/td2.cpp	/^		int n;$/;"	m	class:vecteur1	file:
+pain	clecle/td1sln/pain/Program.cs	/^namespace pain$/;"	n
 point	delahoche/td1.cpp	/^class point{$/;"	c	file:
 point	delahoche/td1.cpp	/^point::point(){$/;"	f	class:point
 point	delahoche/td1.cpp	/^point::point(double p){$/;"	f	class:point
@@ -19,7 +51,27 @@ point	delahoche/td1.cpp	/^point::point(double px,double py){$/;"	f	class:point
 polar	delahoche/td1.cpp	/^void point::polar(){$/;"	f	class:point
 rho	delahoche/td1.cpp	/^		 double rho,theta;$/;"	m	class:point	file:
 rotate	delahoche/td1.cpp	/^void point::rotate(double alpha){$/;"	f	class:point
+scalaireAdresse	delahoche/td2-2.cpp	/^float vecteur2::scalaireAdresse(vecteur2* v2){$/;"	f	class:vecteur2
+scalaireAdresse	delahoche/td2.cpp	/^float vecteur1::scalaireAdresse(vecteur1* v2){$/;"	f	class:vecteur1
+scalaireReference	delahoche/td2-2.cpp	/^float vecteur2::scalaireReference(vecteur2& v2){$/;"	f	class:vecteur2
+scalaireReference	delahoche/td2.cpp	/^float vecteur1::scalaireReference(vecteur1& v2){$/;"	f	class:vecteur1
+scalaireValeur	delahoche/td2-2.cpp	/^float vecteur2::scalaireValeur(vecteur2 v2){$/;"	f	class:vecteur2
+scalaireValeur	delahoche/td2.cpp	/^float vecteur1::scalaireValeur(vecteur1 v2){$/;"	f	class:vecteur1
+tab	delahoche/td2-2.cpp	/^		float *tab;$/;"	m	class:vecteur2	file:
+tab	delahoche/td2.cpp	/^		float tab[N];$/;"	m	class:vecteur1	file:
+td1	clecle/td1.cs	/^	class td1$/;"	c	namespace:td1
+td1	clecle/td1.cs	/^namespace td1$/;"	n
 theta	delahoche/td1.cpp	/^		 double rho,theta;$/;"	m	class:point	file:
+vecteur1	delahoche/td2.cpp	/^class vecteur1{$/;"	c	file:
+vecteur1	delahoche/td2.cpp	/^vecteur1::vecteur1(){$/;"	f	class:vecteur1
+vecteur1	delahoche/td2.cpp	/^vecteur1::vecteur1(int pn){$/;"	f	class:vecteur1
+vecteur1	delahoche/td2.cpp	/^vecteur1::vecteur1(int pn,float *x){$/;"	f	class:vecteur1
+vecteur2	delahoche/td2-2.cpp	/^class vecteur2{$/;"	c	file:
+vecteur2	delahoche/td2-2.cpp	/^vecteur2::vecteur2(){$/;"	f	class:vecteur2
+vecteur2	delahoche/td2-2.cpp	/^vecteur2::vecteur2(int pn){$/;"	f	class:vecteur2
+vecteur2	delahoche/td2-2.cpp	/^vecteur2::vecteur2(int pn,float *tab){$/;"	f	class:vecteur2
 x	delahoche/td1.cpp	/^		 double x,y;$/;"	m	class:point	file:
 y	delahoche/td1.cpp	/^		 double x,y;$/;"	m	class:point	file:
 ~point	delahoche/td1.cpp	/^point::~point(){$/;"	f	class:point
+~vecteur1	delahoche/td2.cpp	/^vecteur1::~vecteur1(){$/;"	f	class:vecteur1
+~vecteur2	delahoche/td2-2.cpp	/^vecteur2::~vecteur2(){$/;"	f	class:vecteur2

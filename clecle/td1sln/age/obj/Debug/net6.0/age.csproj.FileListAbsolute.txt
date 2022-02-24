@@ -1,0 +1,15 @@
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/age/bin/Debug/net6.0/age
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/age/bin/Debug/net6.0/age.deps.json
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/age/bin/Debug/net6.0/age.runtimeconfig.json
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/age/bin/Debug/net6.0/age.dll
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/age/bin/Debug/net6.0/ref/age.dll
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/age/bin/Debug/net6.0/age.pdb
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/age/obj/Debug/net6.0/age.csproj.AssemblyReference.cache
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/age/obj/Debug/net6.0/age.GeneratedMSBuildEditorConfig.editorconfig
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/age/obj/Debug/net6.0/age.AssemblyInfoInputs.cache
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/age/obj/Debug/net6.0/age.AssemblyInfo.cs
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/age/obj/Debug/net6.0/age.csproj.CoreCompileInputs.cache
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/age/obj/Debug/net6.0/age.dll
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/age/obj/Debug/net6.0/ref/age.dll
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/age/obj/Debug/net6.0/age.pdb
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/age/obj/Debug/net6.0/age.genruntimeconfig.cache

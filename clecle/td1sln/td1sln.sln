@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "age", "age\age.csproj", "{EE3674D2-2F55-43F0-A934-683A1EAF1EB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pain", "pain\pain.csproj", "{3AE2B506-81F9-4667-AABB-329B0E2380E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demoPoitier", "demoPoitier\demoPoitier.csproj", "{59AAE538-4D38-472E-97D5-81CD82C23DE2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE3674D2-2F55-43F0-A934-683A1EAF1EB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE3674D2-2F55-43F0-A934-683A1EAF1EB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE3674D2-2F55-43F0-A934-683A1EAF1EB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE3674D2-2F55-43F0-A934-683A1EAF1EB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AE2B506-81F9-4667-AABB-329B0E2380E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AE2B506-81F9-4667-AABB-329B0E2380E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AE2B506-81F9-4667-AABB-329B0E2380E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AE2B506-81F9-4667-AABB-329B0E2380E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59AAE538-4D38-472E-97D5-81CD82C23DE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59AAE538-4D38-472E-97D5-81CD82C23DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59AAE538-4D38-472E-97D5-81CD82C23DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59AAE538-4D38-472E-97D5-81CD82C23DE2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

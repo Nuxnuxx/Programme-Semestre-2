@@ -1,0 +1,15 @@
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/demoPoitier/obj/Debug/net6.0/demoPoitier.csproj.AssemblyReference.cache
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/demoPoitier/obj/Debug/net6.0/demoPoitier.GeneratedMSBuildEditorConfig.editorconfig
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/demoPoitier/obj/Debug/net6.0/demoPoitier.AssemblyInfoInputs.cache
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/demoPoitier/obj/Debug/net6.0/demoPoitier.AssemblyInfo.cs
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/demoPoitier/obj/Debug/net6.0/demoPoitier.csproj.CoreCompileInputs.cache
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/demoPoitier/bin/Debug/net6.0/demoPoitier
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/demoPoitier/bin/Debug/net6.0/demoPoitier.deps.json
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/demoPoitier/bin/Debug/net6.0/demoPoitier.runtimeconfig.json
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/demoPoitier/bin/Debug/net6.0/demoPoitier.dll
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/demoPoitier/bin/Debug/net6.0/ref/demoPoitier.dll
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/demoPoitier/bin/Debug/net6.0/demoPoitier.pdb
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/demoPoitier/obj/Debug/net6.0/demoPoitier.dll
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/demoPoitier/obj/Debug/net6.0/ref/demoPoitier.dll
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/demoPoitier/obj/Debug/net6.0/demoPoitier.pdb
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/demoPoitier/obj/Debug/net6.0/demoPoitier.genruntimeconfig.cache

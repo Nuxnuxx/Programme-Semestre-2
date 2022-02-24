@@ -1,0 +1,15 @@
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/pain/obj/Debug/net6.0/pain.csproj.AssemblyReference.cache
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/pain/obj/Debug/net6.0/pain.GeneratedMSBuildEditorConfig.editorconfig
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/pain/obj/Debug/net6.0/pain.AssemblyInfoInputs.cache
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/pain/obj/Debug/net6.0/pain.AssemblyInfo.cs
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/pain/obj/Debug/net6.0/pain.csproj.CoreCompileInputs.cache
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/pain/bin/Debug/net6.0/pain
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/pain/bin/Debug/net6.0/pain.deps.json
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/pain/bin/Debug/net6.0/pain.runtimeconfig.json
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/pain/bin/Debug/net6.0/pain.dll
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/pain/bin/Debug/net6.0/ref/pain.dll
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/pain/bin/Debug/net6.0/pain.pdb
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/pain/obj/Debug/net6.0/pain.dll
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/pain/obj/Debug/net6.0/ref/pain.dll
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/pain/obj/Debug/net6.0/pain.pdb
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/pain/obj/Debug/net6.0/pain.genruntimeconfig.cache
