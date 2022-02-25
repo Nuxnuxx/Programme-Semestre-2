@@ -1,0 +1,8 @@
+C:\Users\gaetan\source\repos\Programme-Semestre-2\clecle\td1sln\noisettes\bin\Debug\noisettes.exe.config
+C:\Users\gaetan\source\repos\Programme-Semestre-2\clecle\td1sln\noisettes\bin\Debug\noisettes.exe
+C:\Users\gaetan\source\repos\Programme-Semestre-2\clecle\td1sln\noisettes\bin\Debug\noisettes.pdb
+C:\Users\gaetan\source\repos\Programme-Semestre-2\clecle\td1sln\noisettes\obj\Debug\noisettes.csproj.AssemblyReference.cache
+C:\Users\gaetan\source\repos\Programme-Semestre-2\clecle\td1sln\noisettes\obj\Debug\noisettes.csproj.SuggestedBindingRedirects.cache
+C:\Users\gaetan\source\repos\Programme-Semestre-2\clecle\td1sln\noisettes\obj\Debug\noisettes.csproj.CoreCompileInputs.cache
+C:\Users\gaetan\source\repos\Programme-Semestre-2\clecle\td1sln\noisettes\obj\Debug\noisettes.exe
+C:\Users\gaetan\source\repos\Programme-Semestre-2\clecle\td1sln\noisettes\obj\Debug\noisettes.pdb

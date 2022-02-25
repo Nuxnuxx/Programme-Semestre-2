@@ -1,21 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "age", "age\age.csproj", "{EE3674D2-2F55-43F0-A934-683A1EAF1EB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "age", "age\age.csproj", "{EE3674D2-2F55-43F0-A934-683A1EAF1EB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pain", "pain\pain.csproj", "{3AE2B506-81F9-4667-AABB-329B0E2380E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pain", "pain\pain.csproj", "{3AE2B506-81F9-4667-AABB-329B0E2380E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demoPoitier", "demoPoitier\demoPoitier.csproj", "{59AAE538-4D38-472E-97D5-81CD82C23DE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "demoPoitier", "demoPoitier\demoPoitier.csproj", "{59AAE538-4D38-472E-97D5-81CD82C23DE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "programme mystere", "ConsoleApp1\programme mystere.csproj", "{409EB17B-A2F4-4142-9702-8AA11CD98800}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "partagePirate", "partagePirate\partagePirate.csproj", "{F1C30FED-E8CB-4C1B-8C1D-7EC883C6DD97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "noisettes", "noisettes\noisettes.csproj", "{BF89E882-1F96-438B-92A2-406F40FA5B7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{EE3674D2-2F55-43F0-A934-683A1EAF1EB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -30,5 +33,23 @@ Global
 		{59AAE538-4D38-472E-97D5-81CD82C23DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59AAE538-4D38-472E-97D5-81CD82C23DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59AAE538-4D38-472E-97D5-81CD82C23DE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{409EB17B-A2F4-4142-9702-8AA11CD98800}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{409EB17B-A2F4-4142-9702-8AA11CD98800}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{409EB17B-A2F4-4142-9702-8AA11CD98800}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{409EB17B-A2F4-4142-9702-8AA11CD98800}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1C30FED-E8CB-4C1B-8C1D-7EC883C6DD97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1C30FED-E8CB-4C1B-8C1D-7EC883C6DD97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1C30FED-E8CB-4C1B-8C1D-7EC883C6DD97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1C30FED-E8CB-4C1B-8C1D-7EC883C6DD97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF89E882-1F96-438B-92A2-406F40FA5B7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF89E882-1F96-438B-92A2-406F40FA5B7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF89E882-1F96-438B-92A2-406F40FA5B7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF89E882-1F96-438B-92A2-406F40FA5B7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D6A56ABD-086F-4D51-9471-7F212FE8A0EE}
 	EndGlobalSection
 EndGlobal
