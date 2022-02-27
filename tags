@@ -4,14 +4,24 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ButinPartage	clecle/td1sln/piratePartage/Program.cs	/^        public static bool ButinPartage(int pieceOr, int bicorne,int tricorne)$/;"	m	class:piratePartage.Program
+ConsoleApp1	clecle/td1sln/Mystere/Program.cs	/^namespace ConsoleApp1$/;"	n
+MAJStockNoisettes	clecle/td1sln/noisette/Program.cs	/^        public static void MAJStockNoisettes(ref int nbNoisettesStock, int nbNoisettesRecoltees)$/;"	m	class:noisette.Program
 Main	clecle/td1.cs	/^		static void Main(string[] args)$/;"	m	class:td1.td1	file:
+Main	clecle/td1sln/Mystere/Program.cs	/^        public static void Main(string[] args)$/;"	m	class:ConsoleApp1.Program
 Main	clecle/td1sln/age/Program.cs	/^		static void Main(string[] args)$/;"	m	class:age.Program	file:
 Main	clecle/td1sln/demoPoitier/Program.cs	/^		static void Main(string[] args)$/;"	m	class:demoPoitier.Program	file:
+Main	clecle/td1sln/noisette/Program.cs	/^        static void Main(string[] args)$/;"	m	class:noisette.Program	file:
 Main	clecle/td1sln/pain/Program.cs	/^		static void Main(string[] args)$/;"	m	class:pain.Program	file:
+Main	clecle/td1sln/piratePartage/Program.cs	/^        public static void Main(string[] args)$/;"	m	class:piratePartage.Program
+Mystere	clecle/td1sln/Mystere/Program.cs	/^        public static void Mystere(double a, double b,out double c,out double d)$/;"	m	class:ConsoleApp1.Program
 N	delahoche/td2.cpp	3;"	d	file:
+Program	clecle/td1sln/Mystere/Program.cs	/^    internal class Program$/;"	c	namespace:ConsoleApp1
 Program	clecle/td1sln/age/Program.cs	/^	 class Program$/;"	c	namespace:age
 Program	clecle/td1sln/demoPoitier/Program.cs	/^	 class Program$/;"	c	namespace:demoPoitier
+Program	clecle/td1sln/noisette/Program.cs	/^    internal class Program$/;"	c	namespace:noisette
 Program	clecle/td1sln/pain/Program.cs	/^	 class Program$/;"	c	namespace:pain
+Program	clecle/td1sln/piratePartage/Program.cs	/^    internal class Program$/;"	c	namespace:piratePartage
 TestMethod1	clecle/td1sln/test/UnitTest1.cs	/^    public void TestMethod1()$/;"	m	class:UnitTest1
 UnitTest1	clecle/td1sln/test/UnitTest1.cs	/^public class UnitTest1$/;"	c
 addition	delahoche/td2-2.cpp	/^vecteur2 vecteur2::addition(vecteur2& v2){$/;"	f	class:vecteur2
@@ -43,7 +53,9 @@ main	delahoche/td2.cpp	/^int main()$/;"	f
 move	delahoche/td1.cpp	/^void point::move(double dx, double dy){$/;"	f	class:point
 n	delahoche/td2-2.cpp	/^		int n;$/;"	m	class:vecteur2	file:
 n	delahoche/td2.cpp	/^		int n;$/;"	m	class:vecteur1	file:
+noisette	clecle/td1sln/noisette/Program.cs	/^namespace noisette$/;"	n
 pain	clecle/td1sln/pain/Program.cs	/^namespace pain$/;"	n
+piratePartage	clecle/td1sln/piratePartage/Program.cs	/^namespace piratePartage$/;"	n
 point	delahoche/td1.cpp	/^class point{$/;"	c	file:
 point	delahoche/td1.cpp	/^point::point(){$/;"	f	class:point
 point	delahoche/td1.cpp	/^point::point(double p){$/;"	f	class:point
