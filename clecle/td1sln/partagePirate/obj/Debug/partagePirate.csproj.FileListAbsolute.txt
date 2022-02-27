@@ -1,8 +1,0 @@
-C:\Users\gaetan\source\repos\Programme-Semestre-2\clecle\td1sln\partagePirate\bin\Debug\partagePirate.exe.config
-C:\Users\gaetan\source\repos\Programme-Semestre-2\clecle\td1sln\partagePirate\bin\Debug\partagePirate.exe
-C:\Users\gaetan\source\repos\Programme-Semestre-2\clecle\td1sln\partagePirate\bin\Debug\partagePirate.pdb
-C:\Users\gaetan\source\repos\Programme-Semestre-2\clecle\td1sln\partagePirate\obj\Debug\partagePirate.csproj.AssemblyReference.cache
-C:\Users\gaetan\source\repos\Programme-Semestre-2\clecle\td1sln\partagePirate\obj\Debug\partagePirate.csproj.SuggestedBindingRedirects.cache
-C:\Users\gaetan\source\repos\Programme-Semestre-2\clecle\td1sln\partagePirate\obj\Debug\partagePirate.csproj.CoreCompileInputs.cache
-C:\Users\gaetan\source\repos\Programme-Semestre-2\clecle\td1sln\partagePirate\obj\Debug\partagePirate.exe
-C:\Users\gaetan\source\repos\Programme-Semestre-2\clecle\td1sln\partagePirate\obj\Debug\partagePirate.pdb

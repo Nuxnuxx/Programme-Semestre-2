@@ -1,0 +1,15 @@
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/Mystere/bin/Debug/net6.0/Mystere2
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/Mystere/bin/Debug/net6.0/Mystere2.deps.json
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/Mystere/bin/Debug/net6.0/Mystere2.runtimeconfig.json
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/Mystere/bin/Debug/net6.0/Mystere2.dll
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/Mystere/bin/Debug/net6.0/ref/Mystere2.dll
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/Mystere/bin/Debug/net6.0/Mystere2.pdb
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/Mystere/obj/Debug/net6.0/Mystere2.csproj.AssemblyReference.cache
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/Mystere/obj/Debug/net6.0/Mystere2.GeneratedMSBuildEditorConfig.editorconfig
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/Mystere/obj/Debug/net6.0/Mystere2.AssemblyInfoInputs.cache
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/Mystere/obj/Debug/net6.0/Mystere2.AssemblyInfo.cs
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/Mystere/obj/Debug/net6.0/Mystere2.csproj.CoreCompileInputs.cache
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/Mystere/obj/Debug/net6.0/Mystere2.dll
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/Mystere/obj/Debug/net6.0/ref/Mystere2.dll
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/Mystere/obj/Debug/net6.0/Mystere2.pdb
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/Mystere/obj/Debug/net6.0/Mystere2.genruntimeconfig.cache

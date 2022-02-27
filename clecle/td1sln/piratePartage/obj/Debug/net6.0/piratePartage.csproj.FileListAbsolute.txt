@@ -1,0 +1,15 @@
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/piratePartage/bin/Debug/net6.0/piratePartage
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/piratePartage/bin/Debug/net6.0/piratePartage.deps.json
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/piratePartage/bin/Debug/net6.0/piratePartage.runtimeconfig.json
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/piratePartage/bin/Debug/net6.0/piratePartage.dll
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/piratePartage/bin/Debug/net6.0/ref/piratePartage.dll
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/piratePartage/bin/Debug/net6.0/piratePartage.pdb
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/piratePartage/obj/Debug/net6.0/piratePartage.csproj.AssemblyReference.cache
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/piratePartage/obj/Debug/net6.0/piratePartage.GeneratedMSBuildEditorConfig.editorconfig
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/piratePartage/obj/Debug/net6.0/piratePartage.AssemblyInfoInputs.cache
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/piratePartage/obj/Debug/net6.0/piratePartage.AssemblyInfo.cs
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/piratePartage/obj/Debug/net6.0/piratePartage.csproj.CoreCompileInputs.cache
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/piratePartage/obj/Debug/net6.0/piratePartage.dll
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/piratePartage/obj/Debug/net6.0/ref/piratePartage.dll
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/piratePartage/obj/Debug/net6.0/piratePartage.pdb
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/piratePartage/obj/Debug/net6.0/piratePartage.genruntimeconfig.cache

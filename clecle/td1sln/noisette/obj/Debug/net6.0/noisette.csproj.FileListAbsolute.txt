@@ -1,0 +1,15 @@
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/noisette/bin/Debug/net6.0/noisette
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/noisette/bin/Debug/net6.0/noisette.deps.json
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/noisette/bin/Debug/net6.0/noisette.runtimeconfig.json
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/noisette/bin/Debug/net6.0/noisette.dll
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/noisette/bin/Debug/net6.0/ref/noisette.dll
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/noisette/bin/Debug/net6.0/noisette.pdb
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/noisette/obj/Debug/net6.0/noisette.csproj.AssemblyReference.cache
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/noisette/obj/Debug/net6.0/noisette.GeneratedMSBuildEditorConfig.editorconfig
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/noisette/obj/Debug/net6.0/noisette.AssemblyInfoInputs.cache
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/noisette/obj/Debug/net6.0/noisette.AssemblyInfo.cs
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/noisette/obj/Debug/net6.0/noisette.csproj.CoreCompileInputs.cache
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/noisette/obj/Debug/net6.0/noisette.dll
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/noisette/obj/Debug/net6.0/ref/noisette.dll
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/noisette/obj/Debug/net6.0/noisette.pdb
+/home/gaetan/Programme/Programme-Semestre-2/clecle/td1sln/noisette/obj/Debug/net6.0/noisette.genruntimeconfig.cache
