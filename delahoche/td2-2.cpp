@@ -8,10 +8,17 @@ class vecteur2{
 		float *tab;
 		static int ctr;
 	public:
+
+		// CONSTRUCTEUR
 		vecteur2();
 		vecteur2(int);
 		vecteur2(int,float*);
+		vecteur2(const vecteur2&);
+
+		// DESTRUCTEUR
 		~vecteur2();
+
+		// METHODE
 		void display();
 		void initialise();
 		void initialise(int);
@@ -58,6 +65,13 @@ vecteur2::vecteur2(int pn,float *tab){
 	for (int i = 0; i < n; i++)
 		this->tab[i] = tab[i];
 	std::cout << "il y a :" << ctr << " objets" << std::endl;
+}
+
+vecteur2::vecteur2(const vecteur2& v1){
+	if (this != v1) {
+		delete tab;
+		tab = new float[n = v1.n];
+	}
 }
 
 vecteur2::~vecteur2(){
