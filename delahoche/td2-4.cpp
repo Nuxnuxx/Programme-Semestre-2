@@ -190,4 +190,8 @@ void MyStringStat::displayStat(){
 
 int main()
 {
+	MyStringStat s1("TEST");
+	s1.displayStat();
+	MyStringStat s2(s1);
+	s2.displayStat();
 }
