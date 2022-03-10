@@ -26,7 +26,6 @@ class MyString {
 		void maj();
 		void min();
 		MyString concatenation(const MyString&);
-
 };
 
 MyString::MyString(){
@@ -93,7 +92,7 @@ MyString MyString::concatenation(const MyString& s2){
 	char* temp = new char[n + s2.n];
 	int k = 0;
 	for (int i = 0; i < n; i++) {
-		temp[i] = tab[i];
+		temp[k] = tab[i];
 		k++;
 	}
 	for (int i = 0; i < s2.n; i++) {
@@ -110,7 +109,7 @@ class MyStringStat : public MyString {
 		// CONSTRUCTEUR
 		MyStringStat();
 		MyStringStat(const char*);
-		MyStringStat(const MyStringStat&);
+		/* MyStringStat(const MyStringStat&); */
 
 		// OPERATOR
 		/* MyStringStat& operator=(const MyStringStat&); */
@@ -140,12 +139,12 @@ MyStringStat::MyStringStat(const char* tabBase) : MyString(tabBase){
 	fcpte();
 }
 
-MyStringStat::MyStringStat(const MyStringStat& s1) : MyString(s1){
-	std::cout << "CONSTRUCTEUR MyStringStat" << std::endl;
-	tabStat = new int[5];
-	tabStat = s1.tabStat;
-	fcpte();
-}
+/* MyStringStat::MyStringStat(const MyStringStat& s1) : MyString(s1){ */
+/* 	std::cout << "CONSTRUCTEUR MyStringStat" << std::endl; */
+/* 	tabStat = new int[5]; */
+/* 	tabStat = s1.tabStat; */
+/* 	fcpte(); */
+/* } */
 
 MyStringStat::~MyStringStat(){
 	std::cout << "DESTRUCTEUR MyStringStat" << std::endl;
@@ -190,8 +189,11 @@ void MyStringStat::displayStat(){
 
 int main()
 {
-	MyStringStat s1("TEST");
-	s1.displayStat();
-	MyStringStat s2(s1);
-	s2.displayStat();
+	MyString s1("ABC");
+	s1.display();
+	MyString s2("DEF");
+	s2.display();
+	MyString s3;
+	s3 = s1.concatenation(s2);
+	s3.display();
 }
