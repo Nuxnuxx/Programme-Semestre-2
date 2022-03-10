@@ -18,6 +18,10 @@ MyString	delahoche/td2-4.cpp	/^MyString::MyString(){$/;"	f	class:MyString
 MyString	delahoche/td2-4.cpp	/^MyString::MyString(const MyString& s2){$/;"	f	class:MyString
 MyString	delahoche/td2-4.cpp	/^MyString::MyString(const char* tabpn){$/;"	f	class:MyString
 MyString	delahoche/td2-4.cpp	/^class MyString {$/;"	c	file:
+MyStringStat	delahoche/td2-4.cpp	/^MyStringStat::MyStringStat() : MyString() {$/;"	f	class:MyStringStat
+MyStringStat	delahoche/td2-4.cpp	/^MyStringStat::MyStringStat(const MyStringStat& s1) : MyString(s1){$/;"	f	class:MyStringStat
+MyStringStat	delahoche/td2-4.cpp	/^MyStringStat::MyStringStat(const char* tabBase) : MyString(tabBase){$/;"	f	class:MyStringStat
+MyStringStat	delahoche/td2-4.cpp	/^class MyStringStat : public MyString {$/;"	c	file:
 Mystere	clecle/td1sln/Mystere/Program.cs	/^        public static void Mystere(double a, double b,out double c,out double d)$/;"	m	class:ConsoleApp1.Program
 N	delahoche/td2.cpp	3;"	d	file:
 Program	clecle/td1sln/Mystere/Program.cs	/^    internal class Program$/;"	c	namespace:ConsoleApp1
@@ -48,6 +52,9 @@ display	delahoche/td2-2.cpp	/^void vecteur2::display(){$/;"	f	class:vecteur2
 display	delahoche/td2-3.cpp	/^void vecteur2::display() {$/;"	f	class:vecteur2
 display	delahoche/td2-4.cpp	/^void MyString::display(){$/;"	f	class:MyString
 display	delahoche/td2.cpp	/^void vecteur1::display(){$/;"	f	class:vecteur1
+displayStat	delahoche/td2-4.cpp	/^void MyStringStat::displayStat(){$/;"	f	class:MyStringStat
+faff	delahoche/td2-4.cpp	/^void MyStringStat::faff(){$/;"	f	class:MyStringStat
+fcpte	delahoche/td2-4.cpp	/^void MyStringStat::fcpte(){$/;"	f	class:MyStringStat
 homothetie	delahoche/td1.cpp	/^void point::homothetie(double nb){$/;"	f	class:point
 homothetie	delahoche/td2-2.cpp	/^void vecteur2::homothetie(int x){$/;"	f	class:vecteur2
 homothetie	delahoche/td2-3.cpp	/^void vecteur2::homothetie(int x) {$/;"	f	class:vecteur2
@@ -100,6 +107,7 @@ tab	delahoche/td2-2.cpp	/^		float *tab;$/;"	m	class:vecteur2	file:
 tab	delahoche/td2-3.cpp	/^		float* tab;$/;"	m	class:vecteur2	file:
 tab	delahoche/td2-4.cpp	/^		char* tab;$/;"	m	class:MyString	file:
 tab	delahoche/td2.cpp	/^		float tab[N];$/;"	m	class:vecteur1	file:
+tabStat	delahoche/td2-4.cpp	/^		int* tabStat;$/;"	m	class:MyStringStat	file:
 td1	clecle/td1.cs	/^	class td1$/;"	c	namespace:td1
 td1	clecle/td1.cs	/^namespace td1$/;"	n
 theta	delahoche/td1.cpp	/^		 double rho,theta;$/;"	m	class:point	file:
@@ -120,6 +128,7 @@ vecteur2	delahoche/td2-3.cpp	/^vecteur2::vecteur2(int pn, float* tableau) {$/;"	
 x	delahoche/td1.cpp	/^		 double x,y;$/;"	m	class:point	file:
 y	delahoche/td1.cpp	/^		 double x,y;$/;"	m	class:point	file:
 ~MyString	delahoche/td2-4.cpp	/^MyString::~MyString(){$/;"	f	class:MyString
+~MyStringStat	delahoche/td2-4.cpp	/^MyStringStat::~MyStringStat(){$/;"	f	class:MyStringStat
 ~point	delahoche/td1.cpp	/^point::~point(){$/;"	f	class:point
 ~vecteur1	delahoche/td2.cpp	/^vecteur1::~vecteur1(){$/;"	f	class:vecteur1
 ~vecteur2	delahoche/td2-2.cpp	/^vecteur2::~vecteur2(){$/;"	f	class:vecteur2

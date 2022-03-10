@@ -5,7 +5,7 @@
 #include <iostream>
 
 class MyString {
-	private:
+	protected:
 		char* tab;
 		int n;
 	public:
@@ -30,13 +30,13 @@ class MyString {
 };
 
 MyString::MyString(){
-	std::cout << "CONSTRUCTEUR" << std::endl;
+	std::cout << "CONSTRUCTEUR MyString" << std::endl;
 	n = 0;
 	tab = NULL;
 }
 
 MyString::MyString(const char* tabpn){
-	std::cout << "CONSTRUCTEUR" << std::endl;
+	std::cout << "CONSTRUCTEUR MyString" << std::endl;
 	n = strlen(tabpn);
 	tab = new char[n];
 	for (int i = 0; i < n; i++)
@@ -44,7 +44,7 @@ MyString::MyString(const char* tabpn){
 }
 
 MyString::MyString(const MyString& s2){
-	std::cout << "CONSTRUCTEUR" << std::endl;
+	std::cout << "CONSTRUCTEUR MyString" << std::endl;
 	n = s2.n;
 	tab = new char[n];
 	for (int i = 0; i < n; i++)
@@ -52,7 +52,7 @@ MyString::MyString(const MyString& s2){
 }
 
 MyString::~MyString(){
-	std::cout << "DESTRUCTEUR" << std::endl;
+	std::cout << "DESTRUCTEUR MyString" << std::endl;
 	delete[] tab;
 }
 
@@ -77,7 +77,6 @@ void MyString::display(){
 	for (int i = 0; i < n; i++)
 		std::cout << tab[i] ;
 	std::cout << std::endl;
-
 }
 
 void MyString::maj(){
@@ -89,16 +88,6 @@ void MyString::min(){
 	for (int i = 0; i < n; i++)
 		tab[i] = tolower(tab[i]);
 }
-
-/* CONCATENATION DANS LE DIS OBJET S1 */
-/* void MyString::concatenation(const MyString& s2){ */
-/* 	n = n + s2.n; */
-/* 	char* temp = tab; */
-/* 	delete[] tab; */
-/* 	tab = new char[n]; */
-/* 	strcat(temp,s2.tab); */
-/* 	tab = temp; */
-/* } */
 
 MyString MyString::concatenation(const MyString& s2){
 	char* temp = new char[n + s2.n];
@@ -114,13 +103,91 @@ MyString MyString::concatenation(const MyString& s2){
 	return (MyString(temp));
 }
 
+class MyStringStat : public MyString {
+	private:
+		int* tabStat;
+	public:
+		// CONSTRUCTEUR
+		MyStringStat();
+		MyStringStat(const char*);
+		MyStringStat(const MyStringStat&);
+
+		// OPERATOR
+		/* MyStringStat& operator=(const MyStringStat&); */
+
+		// DESTRUCTEUR
+		~MyStringStat();
+
+		// METHODE
+		void fcpte();
+		void faff();
+		void displayStat();
+};
+
+MyStringStat::MyStringStat() : MyString() {
+	std::cout << "CONSTRUCTEUR MyStringStat" << std::endl;
+	tabStat = new int[5];
+	for (int i = 0; i < 5; i++)
+		tabStat[i] = 0;
+	fcpte();
+}
+
+MyStringStat::MyStringStat(const char* tabBase) : MyString(tabBase){
+	std::cout << "CONSTRUCTEUR MyStringStat" << std::endl;
+	tabStat = new int[5];
+	for (int i = 0; i < 5; i++)
+		tabStat[i] = 0;
+	fcpte();
+}
+
+MyStringStat::MyStringStat(const MyStringStat& s1) : MyString(s1){
+	std::cout << "CONSTRUCTEUR MyStringStat" << std::endl;
+	tabStat = new int[5];
+	tabStat = s1.tabStat;
+	fcpte();
+}
+
+MyStringStat::~MyStringStat(){
+	std::cout << "DESTRUCTEUR MyStringStat" << std::endl;
+	delete[] tabStat;
+}
+
+/* MyStringStat& MyStringStat::operator=(const MyStringStat& s1){ */
+/* 	if (this != &s1){ */
+/* 		delete[] tabStat; */
+/* 		tabStat = s1.tabStat; */
+/* 	} */
+/* 	return *this; */
+/* } */
+
+void MyStringStat::fcpte(){
+	for (int i = 0; i < n; i++) {
+		if (isalpha(tab[i]))
+			tabStat[0]++;
+		if (isalpha(tab[i]) == 0)
+			tabStat[1]++;
+		if (isupper(tab[i]))
+			tabStat[2]++;
+		if (islower(tab[i]))
+			tabStat[3]++;
+		if (tab[i] == 32)
+			tabStat[4]++;
+	}
+}
+
+void MyStringStat::faff(){
+	std::cout << "Il y a " << tabStat[0] << " lettres de l'alphabet" << std::endl;
+	std::cout << "Il y a " << tabStat[1] << " autres caractères" << std::endl;
+	std::cout << "Il y a " << tabStat[2] << " majuscules" << std::endl;
+	std::cout << "Il y a " << tabStat[3] << " minuscules" << std::endl;
+	std::cout << "Il y a " << tabStat[4] << " espaces" << std::endl;
+}
+
+void MyStringStat::displayStat(){
+	display();
+	faff();
+}
+
 int main()
 {
-	MyString s1("ABC");
-	MyString s2("DEF");
-	s1.display();
-	s2.display();
-	MyString s3;
-	s3 = s2.concatenation(s1);
-	s3.display();
 }
