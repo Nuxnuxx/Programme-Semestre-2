@@ -3,33 +3,33 @@
 #include <iostream>
 
 class vecteur2 {
-private:
-	int n;
-	float* tab;
-	static int ctr;
-public:
+	private:
+		int n;
+		float* tab;
+		static int ctr;
+	public:
 
-	// CONSTRUCTEUR
-	vecteur2();
-	vecteur2(int);
-	vecteur2(int, float*);
-	vecteur2(const vecteur2&);
+		// CONSTRUCTEUR
+		vecteur2();
+		vecteur2(int);
+		vecteur2(int, float*);
+		vecteur2(const vecteur2&);
 
-	// DESTRUCTEUR
-	~vecteur2();
+		// DESTRUCTEUR
+		~vecteur2();
 
-	// METHODE
-	void display();
-	void initialise();
-	void initialise(int);
-	void initialise(int, float*);
-	void homothetie(int);
-	float scalaireValeur(vecteur2);
-	float scalaireAdresse(vecteur2*);
-	float scalaireReference(vecteur2&);
-	vecteur2 addition(vecteur2&);
-	vecteur2& operator=(const vecteur2&);
-	static void compt();
+		// METHODE
+		void display();
+		void initialise();
+		void initialise(int);
+		void initialise(int, float*);
+		void homothetie(int);
+		float scalaireValeur(vecteur2);
+		float scalaireAdresse(vecteur2*);
+		float scalaireReference(vecteur2&);
+		vecteur2 addition(vecteur2&);
+		vecteur2& operator=(const vecteur2&);
+		static void compt();
 };
 
 int vecteur2::ctr = 0;
@@ -81,7 +81,7 @@ vecteur2::vecteur2(const vecteur2& v2) {
 vecteur2::~vecteur2() {
 	ctr--;
 	std::cout << "DESTRUCTEUR" << std::endl;
-	delete tab;
+	delete[] tab;
 }
 
 void vecteur2::display() {
@@ -163,23 +163,22 @@ float vecteur2::scalaireReference(vecteur2& v2) {
 }
 
 vecteur2 vecteur2::addition(vecteur2& v2) {
+	vecteur2 result;
 	if (n == v2.n) {
-		vecteur2 result;
 		for (int i = 0; i < n; i++)
 		{
 			result.tab[i] = this->tab[i] + v2.tab[i];
 		}
-		return result;
 	}
 	else {
 		std::cout << "ADDITION IMPOSSIBLE" << std::endl;
-		return 0;
 	}
+	return result;
 }
 
-vecteur2& vecteur2::operator=(const vecteur2& v2) { 
+vecteur2& vecteur2::operator=(const vecteur2& v2) {
 	if (this != &v2) {
-		delete tab;
+		delete[] tab;
 		tab = new float[n = v2.n];
 		for (int i = 0; i < n; i++)
 			tab[i] = v2.tab[i];
@@ -188,7 +187,7 @@ vecteur2& vecteur2::operator=(const vecteur2& v2) {
 }
 
 int main() {
-	vecteur2 v1(10);
+	vecteur2 v1(5);
 	v1.initialise();
 	v1.display();
 	vecteur2 v2(v1);
