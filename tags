@@ -6,6 +6,7 @@
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 ButinPartage	clecle/td1sln/piratePartage/Program.cs	/^        public static bool ButinPartage(int pieceOr, int bicorne,int tricorne)$/;"	m	class:piratePartage.Program
 ConsoleApp1	clecle/td1sln/Mystere/Program.cs	/^namespace ConsoleApp1$/;"	n
+Conversion	delahoche/td2-4.cpp	/^char* MyStringStat::Conversion(){$/;"	f	class:MyStringStat
 MAJStockNoisettes	clecle/td1sln/noisette/Program.cs	/^        public static void MAJStockNoisettes(ref int nbNoisettesStock, int nbNoisettesRecoltees)$/;"	m	class:noisette.Program
 Main	clecle/td1.cs	/^		static void Main(string[] args)$/;"	m	class:td1.td1	file:
 Main	clecle/td1sln/Mystere/Program.cs	/^        public static void Main(string[] args)$/;"	m	class:ConsoleApp1.Program
@@ -19,6 +20,7 @@ MyString	delahoche/td2-4.cpp	/^MyString::MyString(const MyString& s2){$/;"	f	cla
 MyString	delahoche/td2-4.cpp	/^MyString::MyString(const char* tabpn){$/;"	f	class:MyString
 MyString	delahoche/td2-4.cpp	/^class MyString {$/;"	c	file:
 MyStringStat	delahoche/td2-4.cpp	/^MyStringStat::MyStringStat() : MyString() {$/;"	f	class:MyStringStat
+MyStringStat	delahoche/td2-4.cpp	/^MyStringStat::MyStringStat(const MyStringStat& s1) : MyString(s1){$/;"	f	class:MyStringStat
 MyStringStat	delahoche/td2-4.cpp	/^MyStringStat::MyStringStat(const char* tabBase) : MyString(tabBase){$/;"	f	class:MyStringStat
 MyStringStat	delahoche/td2-4.cpp	/^class MyStringStat : public MyString {$/;"	c	file:
 Mystere	clecle/td1sln/Mystere/Program.cs	/^        public static void Mystere(double a, double b,out double c,out double d)$/;"	m	class:ConsoleApp1.Program
@@ -41,6 +43,7 @@ cary	delahoche/td1.cpp	/^		 double carx,cary;$/;"	m	class:point	file:
 compt	delahoche/td2-2.cpp	/^void vecteur2::compt(){$/;"	f	class:vecteur2
 compt	delahoche/td2-3.cpp	/^void vecteur2::compt() {$/;"	f	class:vecteur2
 concatenation	delahoche/td2-4.cpp	/^MyString MyString::concatenation(const MyString& s2){$/;"	f	class:MyString
+concatenationStat	delahoche/td2-4.cpp	/^MyStringStat MyStringStat::concatenationStat(const MyStringStat &s2){$/;"	f	class:MyStringStat
 ctr	delahoche/td2-2.cpp	/^		static int ctr;$/;"	m	class:vecteur2	file:
 ctr	delahoche/td2-2.cpp	/^int vecteur2::ctr = 0;$/;"	m	class:vecteur2	file:
 ctr	delahoche/td2-3.cpp	/^		static int ctr;$/;"	m	class:vecteur2	file:
@@ -84,6 +87,7 @@ noisette	clecle/td1sln/noisette/Program.cs	/^namespace noisette$/;"	n
 operator =	delahoche/td2-3.cpp	/^vecteur2& vecteur2::operator=(const vecteur2& v2) {$/;"	f	class:vecteur2
 operator =	delahoche/td2-4.cpp	/^MyString& MyString::operator=(const MyString& s2) {$/;"	f	class:MyString
 operator =	delahoche/td2-4.cpp	/^MyString& MyString::operator=(const char* tabpn){$/;"	f	class:MyString
+operator =	delahoche/td2-4.cpp	/^MyStringStat& MyStringStat::operator=(const MyStringStat& s1){$/;"	f	class:MyStringStat
 pain	clecle/td1sln/pain/Program.cs	/^namespace pain$/;"	n
 piratePartage	clecle/td1sln/piratePartage/Program.cs	/^namespace piratePartage$/;"	n
 point	delahoche/td1.cpp	/^class point{$/;"	c	file:
@@ -102,6 +106,8 @@ scalaireReference	delahoche/td2.cpp	/^float vecteur1::scalaireReference(vecteur1
 scalaireValeur	delahoche/td2-2.cpp	/^float vecteur2::scalaireValeur(vecteur2 v2){$/;"	f	class:vecteur2
 scalaireValeur	delahoche/td2-3.cpp	/^float vecteur2::scalaireValeur(vecteur2 v2) {$/;"	f	class:vecteur2
 scalaireValeur	delahoche/td2.cpp	/^float vecteur1::scalaireValeur(vecteur1 v2){$/;"	f	class:vecteur1
+supprime	delahoche/td2-4.cpp	/^void MyString::supprime(const char sup){$/;"	f	class:MyString
+supprimeStat	delahoche/td2-4.cpp	/^void MyStringStat::supprimeStat(const char sup){$/;"	f	class:MyStringStat
 tab	delahoche/td2-2.cpp	/^		float *tab;$/;"	m	class:vecteur2	file:
 tab	delahoche/td2-3.cpp	/^		float* tab;$/;"	m	class:vecteur2	file:
 tab	delahoche/td2-4.cpp	/^		char* tab;$/;"	m	class:MyString	file:

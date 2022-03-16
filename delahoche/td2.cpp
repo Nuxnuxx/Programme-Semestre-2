@@ -69,7 +69,7 @@ void vecteur1::initialise(int x){
 void vecteur1::initialise(int x,float y[N]){
 	n = x;
 	for (int i = 0; i < n; i++)
-		std::cin >> y[i];
+		tab[i] = y[i];
 }
 
 void vecteur1::homothetie(int x){

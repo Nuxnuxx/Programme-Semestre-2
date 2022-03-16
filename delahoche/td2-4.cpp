@@ -27,6 +27,7 @@ class MyString {
 		void maj();
 		void min();
 		MyString concatenation(const MyString&);
+		void supprime(const char);
 };
 
 MyString::MyString(){
@@ -53,12 +54,12 @@ MyString::MyString(const MyString& s2){
 
 MyString::~MyString(){
 	std::cout << "DESTRUCTEUR MyString" << std::endl;
-	delete[] tab;
+	delete tab;
 }
 
 MyString& MyString::operator=(const MyString& s2) {
 	if (this != &s2) {
-		delete[] tab;
+		delete tab;
 		tab = new char[n = s2.n];
 		for (int i = 0; i < n; i++)
 			tab[i] = s2.tab[i];
@@ -104,6 +105,21 @@ MyString MyString::concatenation(const MyString& s2){
 	return (MyString(temp));
 }
 
+void MyString::supprime(const char sup){
+	for (int i=0; i<=n-1; i++)
+	{
+		if (tab[i]==sup)
+		{
+			for (int j=i; j<=n; j++)
+			{
+				tab[j]=tab[j+1];
+				i--;
+			}
+		}
+	}
+	std::cout << tab << std::endl;
+}
+
 class MyStringStat : public MyString {
 	private:
 		int* tabStat;
@@ -111,10 +127,10 @@ class MyStringStat : public MyString {
 		// CONSTRUCTEUR
 		MyStringStat();
 		MyStringStat(const char*);
-		/* MyStringStat(const MyStringStat&); */
+		MyStringStat(const MyStringStat&);
 
 		// OPERATOR
-		/* MyStringStat& operator=(const MyStringStat&); */
+		MyStringStat& operator=(const MyStringStat&);
 
 		// DESTRUCTEUR
 		~MyStringStat();
@@ -123,6 +139,9 @@ class MyStringStat : public MyString {
 		void fcpte();
 		void faff();
 		void displayStat();
+		MyStringStat concatenationStat(const MyStringStat&);
+		char* Conversion();
+		void supprimeStat(const char);
 };
 
 MyStringStat::MyStringStat() : MyString() {
@@ -130,7 +149,6 @@ MyStringStat::MyStringStat() : MyString() {
 	tabStat = new int[5];
 	for (int i = 0; i < 5; i++)
 		tabStat[i] = 0;
-	fcpte();
 }
 
 MyStringStat::MyStringStat(const char* tabBase) : MyString(tabBase){
@@ -141,27 +159,37 @@ MyStringStat::MyStringStat(const char* tabBase) : MyString(tabBase){
 	fcpte();
 }
 
-/* MyStringStat::MyStringStat(const MyStringStat& s1) : MyString(s1){ */
-/* 	std::cout << "CONSTRUCTEUR MyStringStat" << std::endl; */
-/* 	tabStat = new int[5]; */
-/* 	tabStat = s1.tabStat; */
-/* 	fcpte(); */
-/* } */
+MyStringStat::MyStringStat(const MyStringStat& s1) : MyString(s1){
+	std::cout << "CONSTRUCTEUR MyStringStat" << std::endl;
+	tabStat = new int[5];
+	fcpte();
+}
 
 MyStringStat::~MyStringStat(){
 	std::cout << "DESTRUCTEUR MyStringStat" << std::endl;
-	delete[] tabStat;
+	delete tabStat;
 }
 
-/* MyStringStat& MyStringStat::operator=(const MyStringStat& s1){ */
-/* 	if (this != &s1){ */
-/* 		delete[] tabStat; */
-/* 		tabStat = s1.tabStat; */
-/* 	} */
-/* 	return *this; */
-/* } */
+void MyStringStat::supprimeStat(const char sup){
+	MyString::supprime(sup);
+	fcpte();
+}
+
+MyStringStat& MyStringStat::operator=(const MyStringStat& s1){
+	if (this != &s1){
+		this->MyString::operator=(s1);
+		delete tabStat;
+		tabStat = new int[5];
+		fcpte();
+	}
+	return *this;
+}
 
 void MyStringStat::fcpte(){
+	std::cout << "FCPTE" << std::endl;
+	for (int i = 0; i < 5; i++) {
+		tabStat[i] = 0;
+	}
 	for (int i = 0; i < n; i++) {
 		if (isalpha(tab[i]))
 			tabStat[0]++;
@@ -189,18 +217,24 @@ void MyStringStat::displayStat(){
 	faff();
 }
 
+char* MyStringStat::Conversion(){
+	char* res = new char[n+1];
+	for (int i = 0; i < n; i++) {
+		res[i] = tab[i];
+	}
+	res[n] = '\0';
+	return res;
+}
+
+MyStringStat MyStringStat::concatenationStat(const MyStringStat &s2){
+	MyStringStat temp;
+	temp.MyString::operator=(MyString::concatenation(s2));
+	return temp;
+}
+
 int main()
 {
-	MyString s1("ABC");
-	s1.display();
-	s1.min();
-	MyString s2 = "DEF";
-	s2.display();
-	MyString s3 = s2;
-	s3.min();
-	s3.display();
+	MyStringStat s1("IUT");
+	s1.supprimeStat('I');
 
-	MyString s4;
-	s4 = s3.concatenation(s2);
-	s4.display();
 }
