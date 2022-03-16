@@ -117,11 +117,6 @@ int main()
 	/* a.rotate(90); */
 	/* a.display(); */
 
-	/*  Plusieur syntaxe : */
-	/*  point a(1,1); */
-	/*  point a = point(1,1); */
-	/* Quel changement */
-
 	point b(10,10);
 	b.display();
 	b.rotate(90);

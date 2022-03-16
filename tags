@@ -19,7 +19,6 @@ MyString	delahoche/td2-4.cpp	/^MyString::MyString(const MyString& s2){$/;"	f	cla
 MyString	delahoche/td2-4.cpp	/^MyString::MyString(const char* tabpn){$/;"	f	class:MyString
 MyString	delahoche/td2-4.cpp	/^class MyString {$/;"	c	file:
 MyStringStat	delahoche/td2-4.cpp	/^MyStringStat::MyStringStat() : MyString() {$/;"	f	class:MyStringStat
-MyStringStat	delahoche/td2-4.cpp	/^MyStringStat::MyStringStat(const MyStringStat& s1) : MyString(s1){$/;"	f	class:MyStringStat
 MyStringStat	delahoche/td2-4.cpp	/^MyStringStat::MyStringStat(const char* tabBase) : MyString(tabBase){$/;"	f	class:MyStringStat
 MyStringStat	delahoche/td2-4.cpp	/^class MyStringStat : public MyString {$/;"	c	file:
 Mystere	clecle/td1sln/Mystere/Program.cs	/^        public static void Mystere(double a, double b,out double c,out double d)$/;"	m	class:ConsoleApp1.Program

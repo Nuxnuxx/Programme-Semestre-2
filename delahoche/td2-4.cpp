@@ -8,6 +8,7 @@ class MyString {
 	protected:
 		char* tab;
 		int n;
+
 	public:
 		//CONSTRUCTEUR
 		MyString();
@@ -95,10 +96,11 @@ MyString MyString::concatenation(const MyString& s2){
 		temp[k] = tab[i];
 		k++;
 	}
-	for (int i = 0; i < s2.n; i++) {
-		temp[k] = s2.tab[i];
+	for (int j = 0; j < s2.n; j++) {
+		temp[k] = s2.tab[j];
 		k++;
 	}
+	std::cout << temp << std::endl;
 	return (MyString(temp));
 }
 
@@ -191,9 +193,14 @@ int main()
 {
 	MyString s1("ABC");
 	s1.display();
-	MyString s2("DEF");
+	s1.min();
+	MyString s2 = "DEF";
 	s2.display();
-	MyString s3;
-	s3 = s1.concatenation(s2);
+	MyString s3 = s2;
+	s3.min();
 	s3.display();
+
+	MyString s4;
+	s4 = s3.concatenation(s2);
+	s4.display();
 }
