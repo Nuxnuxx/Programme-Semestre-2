@@ -125,7 +125,7 @@ void MyString::supprime(const char sup){
 }
 
 class MyStringStat : public MyString {
-	protected:
+	private:
 		int* tabStat;
 
 	public:
@@ -241,88 +241,25 @@ class MyStringStatExt : public MyStringStat {
 		int tabStatExt[26];
 
 	public:
-
 		//CONSTRUCTEUR
+
 		MyStringStatExt();
 		MyStringStatExt(const char*);
+		MyStringStatExt(const int,const float);
 		MyStringStatExt(const MyStringStatExt&);
-		MyStringStatExt(const int,const char);
-
-		//OPERATOR
-		MyStringStatExt& operator=(const MyStringStatExt&);
 		//DESTRUCTEUR
 		~MyStringStatExt();
 
+		//OPERATOR
+
 		//METHODE
-		void fcpteExt();
-		void displayStatExt();
-		MyStringStatExt concatenationStatExt(const MyStringStatExt&);
-		void supprimeStatExt(const char);
+
+
+
 };
 
 MyStringStatExt::MyStringStatExt() : MyStringStat(){
-	std::cout << "CONSTRUCTEUR MyStringStatExt" << std::endl;
-}
 
-MyStringStatExt::MyStringStatExt(const char* tabpn) : MyStringStat(tabpn){
-	std::cout << "CONSTRUCTEUR MyStringStatExt" << std::endl;
-	fcpteExt();
-}
-
-MyStringStatExt::MyStringStatExt(const MyStringStatExt& s1) : MyStringStat(s1){
-	std::cout << "CONSTRUCTEUR MyStringStatExt" << std::endl;
-	fcpteExt();
-}
-
-MyStringStatExt::MyStringStatExt(const int pn,const char cara){
-	char* temp = new char[pn];
-}
-
-MyStringStatExt& MyStringStatExt::operator=(const MyStringStatExt &s1){
-	if (this != &s1){
-		this->MyStringStat::operator=(s1);
-		fcpteExt();
-	}
-	return *this;
-}
-
-MyStringStatExt::~MyStringStatExt(){
-	std::cout << "DESTRUCTEUR MyStringStatExt" << std::endl;
-}
-
-void MyStringStatExt::fcpteExt(){
-	std::cout << "FCPTEEXT" << std::endl;
-	int i;
-	for (int i = 0; i < 26; i++) {
-		tabStatExt[i] = 0;
-	}
-	for (i = 0; i < n; i++) {
-		if(isalpha(tab[i])){
-			int val = (int)toupper(tab[i]);
-			tabStatExt[val - 65]++;
-			std::cout << tabStatExt[val - 65] << std::endl;
-		}
-	}
-}
-
-void MyStringStatExt::displayStatExt(){
-	display();
-	displayStat();
-	for(char c='A',i = 0; i < 26; i++, c++){
-		std::cout << "il y a " << tabStatExt[i] << "  lettres" << c << std::endl;
-	}
-}
-
-MyStringStatExt MyStringStatExt::concatenationStatExt(const MyStringStatExt& s1){
-	MyStringStatExt temp;
-
-	temp.MyStringStat::operator=(MyStringStat::concatenationStat(s1));
-	return temp;
-}
-
-void MyStringStatExt::supprimeStatExt(const char sup){
-	MyStringStat::supprimeStat(sup);
-	fcpteExt();
 }
 
 int main()
