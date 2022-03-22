@@ -10,6 +10,7 @@ class MyString {
 		int n;
 
 	public:
+
 		//CONSTRUCTEUR
 		MyString();
 		MyString(const char*);
@@ -40,6 +41,7 @@ MyString::MyString(const char* tabpn){
 	std::cout << "CONSTRUCTEUR MyString" << std::endl;
 	n = strlen(tabpn);
 	tab = new char[n];
+
 	for (int i = 0; i < n; i++)
 		tab[i] = tabpn[i];
 }
@@ -48,13 +50,14 @@ MyString::MyString(const MyString& s2){
 	std::cout << "CONSTRUCTEUR MyString" << std::endl;
 	n = s2.n;
 	tab = new char[n];
+
 	for (int i = 0; i < n; i++)
 		tab[i] = s2.tab[i];
 }
 
 MyString::~MyString(){
 	std::cout << "DESTRUCTEUR MyString" << std::endl;
-	delete tab;
+	delete[] tab;
 }
 
 MyString& MyString::operator=(const MyString& s2) {
@@ -93,6 +96,7 @@ void MyString::min(){
 MyString MyString::concatenation(const MyString& s2){
 	char* temp = new char[n + s2.n];
 	int k = 0;
+
 	for (int i = 0; i < n; i++) {
 		temp[k] = tab[i];
 		k++;
@@ -123,7 +127,9 @@ void MyString::supprime(const char sup){
 class MyStringStat : public MyString {
 	private:
 		int* tabStat;
+
 	public:
+
 		// CONSTRUCTEUR
 		MyStringStat();
 		MyStringStat(const char*);
@@ -147,15 +153,11 @@ class MyStringStat : public MyString {
 MyStringStat::MyStringStat() : MyString() {
 	std::cout << "CONSTRUCTEUR MyStringStat" << std::endl;
 	tabStat = new int[5];
-	for (int i = 0; i < 5; i++)
-		tabStat[i] = 0;
 }
 
 MyStringStat::MyStringStat(const char* tabBase) : MyString(tabBase){
 	std::cout << "CONSTRUCTEUR MyStringStat" << std::endl;
 	tabStat = new int[5];
-	for (int i = 0; i < 5; i++)
-		tabStat[i] = 0;
 	fcpte();
 }
 
@@ -167,7 +169,7 @@ MyStringStat::MyStringStat(const MyStringStat& s1) : MyString(s1){
 
 MyStringStat::~MyStringStat(){
 	std::cout << "DESTRUCTEUR MyStringStat" << std::endl;
-	delete tabStat;
+	delete[] tabStat;
 }
 
 void MyStringStat::supprimeStat(const char sup){
@@ -193,13 +195,13 @@ void MyStringStat::fcpte(){
 	for (int i = 0; i < n; i++) {
 		if (isalpha(tab[i]))
 			tabStat[0]++;
-		if (isalpha(tab[i]) == 0)
+		if (!isalpha(tab[i]) && !isspace(tab[i]))
 			tabStat[1]++;
 		if (isupper(tab[i]))
 			tabStat[2]++;
 		if (islower(tab[i]))
 			tabStat[3]++;
-		if (tab[i] == 32)
+		if (isspace(tab[i]))
 			tabStat[4]++;
 	}
 }
@@ -219,6 +221,7 @@ void MyStringStat::displayStat(){
 
 char* MyStringStat::Conversion(){
 	char* res = new char[n+1];
+
 	for (int i = 0; i < n; i++) {
 		res[i] = tab[i];
 	}
@@ -228,13 +231,14 @@ char* MyStringStat::Conversion(){
 
 MyStringStat MyStringStat::concatenationStat(const MyStringStat &s2){
 	MyStringStat temp;
+
 	temp.MyString::operator=(MyString::concatenation(s2));
 	return temp;
 }
 
 int main()
 {
-	MyStringStat s1("IUT");
-	s1.supprimeStat('I');
-
+	MyStringStat s1("DAODk AO");
+	MyStringStat s2 = s1;
+	s1.displayStat();
 }
