@@ -26,7 +26,7 @@ MyStringStat	delahoche/td2-4.cpp	/^class MyStringStat : public MyString {$/;"	c	
 MyStringStatExt	delahoche/td2-4.cpp	/^MyStringStatExt::MyStringStatExt() : MyStringStat(){$/;"	f	class:MyStringStatExt
 MyStringStatExt	delahoche/td2-4.cpp	/^MyStringStatExt::MyStringStatExt(const MyStringStatExt& s1) : MyStringStat(s1){$/;"	f	class:MyStringStatExt
 MyStringStatExt	delahoche/td2-4.cpp	/^MyStringStatExt::MyStringStatExt(const char* tabpn) : MyStringStat(tabpn){$/;"	f	class:MyStringStatExt
-MyStringStatExt	delahoche/td2-4.cpp	/^MyStringStatExt::MyStringStatExt(const int pn,const char cara){$/;"	f	class:MyStringStatExt
+MyStringStatExt	delahoche/td2-4.cpp	/^MyStringStatExt::MyStringStatExt(const int pn,const char cara) {$/;"	f	class:MyStringStatExt
 MyStringStatExt	delahoche/td2-4.cpp	/^class MyStringStatExt : public MyStringStat {$/;"	c	file:
 Mystere	clecle/td1sln/Mystere/Program.cs	/^        public static void Mystere(double a, double b,out double c,out double d)$/;"	m	class:ConsoleApp1.Program
 N	delahoche/td2.cpp	3;"	d	file:

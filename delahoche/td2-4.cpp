@@ -188,7 +188,6 @@ MyStringStat& MyStringStat::operator=(const MyStringStat& s1){
 }
 
 void MyStringStat::fcpte(){
-	std::cout << "FCPTE" << std::endl;
 	for (int i = 0; i < 5; i++) {
 		tabStat[i] = 0;
 	}
@@ -207,6 +206,7 @@ void MyStringStat::fcpte(){
 }
 
 void MyStringStat::faff(){
+	std::cout << "\n" << std::endl;
 	std::cout << "Il y a " << tabStat[0] << " lettres de l'alphabet" << std::endl;
 	std::cout << "Il y a " << tabStat[1] << " autres caractères" << std::endl;
 	std::cout << "Il y a " << tabStat[2] << " majuscules" << std::endl;
@@ -261,21 +261,29 @@ class MyStringStatExt : public MyStringStat {
 };
 
 MyStringStatExt::MyStringStatExt() : MyStringStat(){
-	std::cout << "CONSTRUCTEUR MyStringStatExt" << std::endl;
+	std::cout << "CONSTRUCTEUR MyStringStatExt\n" << std::endl;
 }
 
 MyStringStatExt::MyStringStatExt(const char* tabpn) : MyStringStat(tabpn){
-	std::cout << "CONSTRUCTEUR MyStringStatExt" << std::endl;
+	std::cout << "CONSTRUCTEUR MyStringStatExt\n" << std::endl;
 	fcpteExt();
 }
 
 MyStringStatExt::MyStringStatExt(const MyStringStatExt& s1) : MyStringStat(s1){
-	std::cout << "CONSTRUCTEUR MyStringStatExt" << std::endl;
+	std::cout << "CONSTRUCTEUR MyStringStatExt\n" << std::endl;
 	fcpteExt();
 }
 
-MyStringStatExt::MyStringStatExt(const int pn,const char cara){
+MyStringStatExt::MyStringStatExt(const int pn,const char cara) {
+	std::cout << "CONSTRUCTEUR MyStringStatExt\n" << std::endl;
 	char* temp = new char[pn];
+
+	for (int i = 0; i < pn; i++) {
+		temp[i] = cara;
+	}
+	std::cout << "CONSTRUCTEUR DANS CONSTRUCTEUR MyStringStatExt supplémentaire" << std::endl;
+	new (this) MyStringStatExt(temp);
+	fcpteExt();
 }
 
 MyStringStatExt& MyStringStatExt::operator=(const MyStringStatExt &s1){
@@ -287,12 +295,13 @@ MyStringStatExt& MyStringStatExt::operator=(const MyStringStatExt &s1){
 }
 
 MyStringStatExt::~MyStringStatExt(){
-	std::cout << "DESTRUCTEUR MyStringStatExt" << std::endl;
+	std::cout << "\nDESTRUCTEUR MyStringStatExt" << std::endl;
 }
 
 void MyStringStatExt::fcpteExt(){
-	std::cout << "FCPTEEXT" << std::endl;
+	std::cout << "FCPTEEXT\n" << std::endl;
 	int i;
+
 	for (int i = 0; i < 26; i++) {
 		tabStatExt[i] = 0;
 	}
@@ -300,7 +309,6 @@ void MyStringStatExt::fcpteExt(){
 		if(isalpha(tab[i])){
 			int val = (int)toupper(tab[i]);
 			tabStatExt[val - 65]++;
-			std::cout << tabStatExt[val - 65] << std::endl;
 		}
 	}
 }
@@ -308,8 +316,10 @@ void MyStringStatExt::fcpteExt(){
 void MyStringStatExt::displayStatExt(){
 	display();
 	displayStat();
-	for(char c='A',i = 0; i < 26; i++, c++){
-		std::cout << "il y a " << tabStatExt[i] << "  lettres" << c << std::endl;
+	std::cout << "\n" << std::endl;
+	for(int i = 0; i < 26; i++){
+		if (tabStatExt[i] != 0)
+			std::cout << "il y a " << tabStatExt[i] << " lettres : " << char(97 + i) << std::endl;
 	}
 }
 
@@ -327,4 +337,6 @@ void MyStringStatExt::supprimeStatExt(const char sup){
 
 int main()
 {
+	MyStringStatExt s1("ABCDEF");
+	s1.displayStatExt();
 }
