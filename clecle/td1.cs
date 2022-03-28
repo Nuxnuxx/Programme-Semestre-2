@@ -5,7 +5,6 @@ namespace td1
 	{
 		static void Main(string[] args)
 		{
-
 		}
 	}
 

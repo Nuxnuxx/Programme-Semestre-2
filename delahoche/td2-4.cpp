@@ -1,6 +1,6 @@
 #include <cctype>
+#include <cstring>
 #include <cstdlib>
-#include <string.h>
 #include <iomanip>
 #include <iostream>
 
@@ -105,7 +105,6 @@ MyString MyString::concatenation(const MyString& s2){
 		temp[k] = s2.tab[j];
 		k++;
 	}
-	std::cout << temp << std::endl;
 	return (MyString(temp));
 }
 
@@ -300,12 +299,11 @@ MyStringStatExt::~MyStringStatExt(){
 
 void MyStringStatExt::fcpteExt(){
 	std::cout << "FCPTEEXT\n" << std::endl;
-	int i;
 
 	for (int i = 0; i < 26; i++) {
 		tabStatExt[i] = 0;
 	}
-	for (i = 0; i < n; i++) {
+	for (int i = 0; i < n; i++) {
 		if(isalpha(tab[i])){
 			int val = (int)toupper(tab[i]);
 			tabStatExt[val - 65]++;
@@ -335,8 +333,14 @@ void MyStringStatExt::supprimeStatExt(const char sup){
 	fcpteExt();
 }
 
+
 int main()
 {
-	MyStringStatExt s1("ABCDEF");
+	MyStringStatExt s1("ABC");
 	s1.displayStatExt();
+	MyStringStatExt s2("DEF");
+
+	MyStringStatExt s3;
+	s3 = s1.concatenationStatExt(s2);
+	s3.displayStatExt();
 }

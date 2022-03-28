@@ -48,6 +48,7 @@ cary	delahoche/td1.cpp	/^		 double carx,cary;$/;"	m	class:point	file:
 compt	delahoche/td2-2.cpp	/^void vecteur2::compt(){$/;"	f	class:vecteur2
 compt	delahoche/td2-3.cpp	/^void vecteur2::compt() {$/;"	f	class:vecteur2
 concatenation	delahoche/td2-4.cpp	/^MyString MyString::concatenation(const MyString& s2){$/;"	f	class:MyString
+concatenation	delahoche/td2-5.cpp	/^myString myString::concatenation(myString& s) {$/;"	f	class:myString
 concatenationStat	delahoche/td2-4.cpp	/^MyStringStat MyStringStat::concatenationStat(const MyStringStat &s2){$/;"	f	class:MyStringStat
 concatenationStatExt	delahoche/td2-4.cpp	/^MyStringStatExt MyStringStatExt::concatenationStatExt(const MyStringStatExt& s1){$/;"	f	class:MyStringStatExt
 ctr	delahoche/td2-2.cpp	/^		static int ctr;$/;"	m	class:vecteur2	file:
@@ -59,11 +60,15 @@ display	delahoche/td1.cpp	/^void point::display(){$/;"	f	class:point
 display	delahoche/td2-2.cpp	/^void vecteur2::display(){$/;"	f	class:vecteur2
 display	delahoche/td2-3.cpp	/^void vecteur2::display() {$/;"	f	class:vecteur2
 display	delahoche/td2-4.cpp	/^void MyString::display(){$/;"	f	class:MyString
+display	delahoche/td2-5.cpp	/^void myString::display() {$/;"	f	class:myString
 display	delahoche/td2.cpp	/^void vecteur1::display(){$/;"	f	class:vecteur1
 displayStat	delahoche/td2-4.cpp	/^void MyStringStat::displayStat(){$/;"	f	class:MyStringStat
+displayStat	delahoche/td2-5.cpp	/^void myStringStat :: displayStat() {$/;"	f	class:myStringStat
 displayStatExt	delahoche/td2-4.cpp	/^void MyStringStatExt::displayStatExt(){$/;"	f	class:MyStringStatExt
 faff	delahoche/td2-4.cpp	/^void MyStringStat::faff(){$/;"	f	class:MyStringStat
+faff	delahoche/td2-5.cpp	/^void myStringStat :: faff() {$/;"	f	class:myStringStat
 fcpte	delahoche/td2-4.cpp	/^void MyStringStat::fcpte(){$/;"	f	class:MyStringStat
+fcpte	delahoche/td2-5.cpp	/^void myStringStat :: fcpte() {$/;"	f	class:myStringStat
 fcpteExt	delahoche/td2-4.cpp	/^void MyStringStatExt::fcpteExt(){$/;"	f	class:MyStringStatExt
 homothetie	delahoche/td1.cpp	/^void point::homothetie(double nb){$/;"	f	class:point
 homothetie	delahoche/td2-2.cpp	/^void vecteur2::homothetie(int x){$/;"	f	class:vecteur2
@@ -79,14 +84,26 @@ initialise	delahoche/td2-3.cpp	/^void vecteur2::initialise(int x, float* y) {$/;
 initialise	delahoche/td2.cpp	/^void vecteur1::initialise(){$/;"	f	class:vecteur1
 initialise	delahoche/td2.cpp	/^void vecteur1::initialise(int x){$/;"	f	class:vecteur1
 initialise	delahoche/td2.cpp	/^void vecteur1::initialise(int x,float y[N]){$/;"	f	class:vecteur1
+len	delahoche/td2-5.cpp	/^		int len;$/;"	m	class:myString	file:
 main	delahoche/td1.cpp	/^int main()$/;"	f
 main	delahoche/td2-2.cpp	/^int main(){$/;"	f
 main	delahoche/td2-3.cpp	/^int main() {$/;"	f
 main	delahoche/td2-4.cpp	/^int main()$/;"	f
+main	delahoche/td2-5.cpp	/^int main(int argc, char *argv[])$/;"	f
 main	delahoche/td2.cpp	/^int main()$/;"	f
 maj	delahoche/td2-4.cpp	/^void MyString::maj(){$/;"	f	class:MyString
+maj	delahoche/td2-5.cpp	/^void myString::maj() {$/;"	f	class:myString
 min	delahoche/td2-4.cpp	/^void MyString::min(){$/;"	f	class:MyString
+min	delahoche/td2-5.cpp	/^void myString::min() {$/;"	f	class:myString
 move	delahoche/td1.cpp	/^void point::move(double dx, double dy){$/;"	f	class:point
+myString	delahoche/td2-5.cpp	/^class myString {$/;"	c	file:
+myString	delahoche/td2-5.cpp	/^myString::myString() {$/;"	f	class:myString
+myString	delahoche/td2-5.cpp	/^myString::myString(const char *s) {$/;"	f	class:myString
+myString	delahoche/td2-5.cpp	/^myString::myString(const myString &s) {$/;"	f	class:myString
+myStringStat	delahoche/td2-5.cpp	/^class myStringStat : public myString {$/;"	c	file:
+myStringStat	delahoche/td2-5.cpp	/^myStringStat :: myStringStat() : myString() {$/;"	f	class:myStringStat
+myStringStat	delahoche/td2-5.cpp	/^myStringStat :: myStringStat(const char *s) : myString(s) {$/;"	f	class:myStringStat
+myStringStat	delahoche/td2-5.cpp	/^myStringStat :: myStringStat(const myString &s) : myString(s) {$/;"	f	class:myStringStat
 n	delahoche/td2-2.cpp	/^		int n;$/;"	m	class:vecteur2	file:
 n	delahoche/td2-3.cpp	/^		int n;$/;"	m	class:vecteur2	file:
 n	delahoche/td2-4.cpp	/^		int n;$/;"	m	class:MyString	file:
@@ -97,6 +114,9 @@ operator =	delahoche/td2-4.cpp	/^MyString& MyString::operator=(const MyString& s
 operator =	delahoche/td2-4.cpp	/^MyString& MyString::operator=(const char* tabpn){$/;"	f	class:MyString
 operator =	delahoche/td2-4.cpp	/^MyStringStat& MyStringStat::operator=(const MyStringStat& s1){$/;"	f	class:MyStringStat
 operator =	delahoche/td2-4.cpp	/^MyStringStatExt& MyStringStatExt::operator=(const MyStringStatExt &s1){$/;"	f	class:MyStringStatExt
+operator =	delahoche/td2-5.cpp	/^myString &myString::operator=(const char *s) {$/;"	f	class:myString
+operator =	delahoche/td2-5.cpp	/^myString &myString::operator=(const myString &s) {$/;"	f	class:myString
+operator =	delahoche/td2-5.cpp	/^myStringStat &myStringStat :: operator=(const myStringStat &s) {$/;"	f	class:myStringStat
 pain	clecle/td1sln/pain/Program.cs	/^namespace pain$/;"	n
 piratePartage	clecle/td1sln/piratePartage/Program.cs	/^namespace piratePartage$/;"	n
 point	delahoche/td1.cpp	/^class point{$/;"	c	file:
@@ -115,7 +135,9 @@ scalaireReference	delahoche/td2.cpp	/^float vecteur1::scalaireReference(vecteur1
 scalaireValeur	delahoche/td2-2.cpp	/^float vecteur2::scalaireValeur(vecteur2 v2){$/;"	f	class:vecteur2
 scalaireValeur	delahoche/td2-3.cpp	/^float vecteur2::scalaireValeur(vecteur2 v2) {$/;"	f	class:vecteur2
 scalaireValeur	delahoche/td2.cpp	/^float vecteur1::scalaireValeur(vecteur1 v2){$/;"	f	class:vecteur1
+str	delahoche/td2-5.cpp	/^		char *str;$/;"	m	class:myString	file:
 supprime	delahoche/td2-4.cpp	/^void MyString::supprime(const char sup){$/;"	f	class:MyString
+supprimeChar	delahoche/td2-5.cpp	/^void myString::supprimeChar(char c) {$/;"	f	class:myString
 supprimeStat	delahoche/td2-4.cpp	/^void MyStringStat::supprimeStat(const char sup){$/;"	f	class:MyStringStat
 supprimeStatExt	delahoche/td2-4.cpp	/^void MyStringStatExt::supprimeStatExt(const char sup){$/;"	f	class:MyStringStatExt
 tab	delahoche/td2-2.cpp	/^		float *tab;$/;"	m	class:vecteur2	file:
@@ -123,6 +145,7 @@ tab	delahoche/td2-3.cpp	/^		float* tab;$/;"	m	class:vecteur2	file:
 tab	delahoche/td2-4.cpp	/^		char* tab;$/;"	m	class:MyString	file:
 tab	delahoche/td2.cpp	/^		float tab[N];$/;"	m	class:vecteur1	file:
 tabStat	delahoche/td2-4.cpp	/^		int* tabStat;$/;"	m	class:MyStringStat	file:
+tabStat	delahoche/td2-5.cpp	/^		int *tabStat;$/;"	m	class:myStringStat	file:
 tabStatExt	delahoche/td2-4.cpp	/^		int tabStatExt[26];$/;"	m	class:MyStringStatExt	file:
 td1	clecle/td1.cs	/^	class td1$/;"	c	namespace:td1
 td1	clecle/td1.cs	/^namespace td1$/;"	n
@@ -146,6 +169,8 @@ y	delahoche/td1.cpp	/^		 double x,y;$/;"	m	class:point	file:
 ~MyString	delahoche/td2-4.cpp	/^MyString::~MyString(){$/;"	f	class:MyString
 ~MyStringStat	delahoche/td2-4.cpp	/^MyStringStat::~MyStringStat(){$/;"	f	class:MyStringStat
 ~MyStringStatExt	delahoche/td2-4.cpp	/^MyStringStatExt::~MyStringStatExt(){$/;"	f	class:MyStringStatExt
+~myString	delahoche/td2-5.cpp	/^myString::~myString() {$/;"	f	class:myString
+~myStringStat	delahoche/td2-5.cpp	/^myStringStat :: ~myStringStat() {$/;"	f	class:myStringStat
 ~point	delahoche/td1.cpp	/^point::~point(){$/;"	f	class:point
 ~vecteur1	delahoche/td2.cpp	/^vecteur1::~vecteur1(){$/;"	f	class:vecteur1
 ~vecteur2	delahoche/td2-2.cpp	/^vecteur2::~vecteur2(){$/;"	f	class:vecteur2
