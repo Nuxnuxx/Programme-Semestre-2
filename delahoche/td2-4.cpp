@@ -236,7 +236,7 @@ MyStringStat MyStringStat::concatenationStat(const MyStringStat &s2){
 }
 
 class MyStringStatExt : public MyStringStat {
-	private:
+	protected:
 		int tabStatExt[26];
 
 	public:
@@ -333,14 +333,6 @@ void MyStringStatExt::supprimeStatExt(const char sup){
 	fcpteExt();
 }
 
-
 int main()
 {
-	MyStringStatExt s1("ABC");
-	s1.displayStatExt();
-	MyStringStatExt s2("DEF");
-
-	MyStringStatExt s3;
-	s3 = s1.concatenationStatExt(s2);
-	s3.displayStatExt();
 }
