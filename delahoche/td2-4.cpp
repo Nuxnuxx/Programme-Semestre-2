@@ -6,7 +6,7 @@
 
 class MyString {
 	protected:
-		char* tab;
+		char *tab;
 		int n;
 
 	public:

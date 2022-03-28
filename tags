@@ -120,7 +120,7 @@ supprimeStat	delahoche/td2-4.cpp	/^void MyStringStat::supprimeStat(const char su
 supprimeStatExt	delahoche/td2-4.cpp	/^void MyStringStatExt::supprimeStatExt(const char sup){$/;"	f	class:MyStringStatExt
 tab	delahoche/td2-2.cpp	/^		float *tab;$/;"	m	class:vecteur2	file:
 tab	delahoche/td2-3.cpp	/^		float* tab;$/;"	m	class:vecteur2	file:
-tab	delahoche/td2-4.cpp	/^		char* tab;$/;"	m	class:MyString	file:
+tab	delahoche/td2-4.cpp	/^		char *tab;$/;"	m	class:MyString	file:
 tab	delahoche/td2.cpp	/^		float tab[N];$/;"	m	class:vecteur1	file:
 tabStat	delahoche/td2-4.cpp	/^		int* tabStat;$/;"	m	class:MyStringStat	file:
 tabStatExt	delahoche/td2-4.cpp	/^		int tabStatExt[26];$/;"	m	class:MyStringStatExt	file:
