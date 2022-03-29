@@ -335,4 +335,5 @@ void MyStringStatExt::supprimeStatExt(const char sup){
 
 int main()
 {
+
 }

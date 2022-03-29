@@ -60,6 +60,7 @@ display	delahoche/td2-2.cpp	/^void vecteur2::display(){$/;"	f	class:vecteur2
 display	delahoche/td2-3.cpp	/^void vecteur2::display() {$/;"	f	class:vecteur2
 display	delahoche/td2-4.cpp	/^void MyString::display(){$/;"	f	class:MyString
 display	delahoche/td2.cpp	/^void vecteur1::display(){$/;"	f	class:vecteur1
+displayBoard	delahoche/connectfour.cpp	/^void displayBoard(char board[3][3]) {$/;"	f
 displayStat	delahoche/td2-4.cpp	/^void MyStringStat::displayStat(){$/;"	f	class:MyStringStat
 displayStatExt	delahoche/td2-4.cpp	/^void MyStringStatExt::displayStatExt(){$/;"	f	class:MyStringStatExt
 faff	delahoche/td2-4.cpp	/^void MyStringStat::faff(){$/;"	f	class:MyStringStat
@@ -79,6 +80,7 @@ initialise	delahoche/td2-3.cpp	/^void vecteur2::initialise(int x, float* y) {$/;
 initialise	delahoche/td2.cpp	/^void vecteur1::initialise(){$/;"	f	class:vecteur1
 initialise	delahoche/td2.cpp	/^void vecteur1::initialise(int x){$/;"	f	class:vecteur1
 initialise	delahoche/td2.cpp	/^void vecteur1::initialise(int x,float y[N]){$/;"	f	class:vecteur1
+main	delahoche/connectfour.cpp	/^int main(int argc, char *argv[])$/;"	f
 main	delahoche/td1.cpp	/^int main()$/;"	f
 main	delahoche/td2-2.cpp	/^int main(){$/;"	f
 main	delahoche/td2-3.cpp	/^int main() {$/;"	f
