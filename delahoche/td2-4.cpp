@@ -105,22 +105,27 @@ MyString MyString::concatenation(const MyString& s2){
 		temp[k] = s2.tab[j];
 		k++;
 	}
-	return (MyString(temp));
+	return(MyString(temp));
 }
 
 void MyString::supprime(const char sup){
-	for (int i=0; i<=n-1; i++)
-	{
-		if (tab[i]==sup)
-		{
-			for (int j=i; j<=n; j++)
-			{
-				tab[j]=tab[j+1];
-				i--;
-			}
+	char* res;
+	int compt = 0;
+	res = new char[n];
+	for (int i = 0; i < n; i++) {
+		res[i] = tab[i];
+		if (tab[i] == sup)
+			compt++;
+	}
+	delete tab;
+	tab = new char[n = n - compt];
+	int j = 0;
+	for (int i = 0; i < n+compt; i++) {
+		if (res[i] != sup) {
+			tab[j] = res[i];
+			j++;
 		}
 	}
-	std::cout << tab << std::endl;
 }
 
 class MyStringStat : public MyString {
@@ -231,7 +236,7 @@ char* MyStringStat::Conversion(){
 MyStringStat MyStringStat::concatenationStat(const MyStringStat &s2){
 	MyStringStat temp;
 
-	temp.MyString::operator=(MyString::concatenation(s2));
+	temp.MyString::operator=(MyString::concatenation(s2)); // sus
 	return temp;
 }
 
@@ -275,13 +280,12 @@ MyStringStatExt::MyStringStatExt(const MyStringStatExt& s1) : MyStringStat(s1){
 
 MyStringStatExt::MyStringStatExt(const int pn,const char cara) {
 	std::cout << "CONSTRUCTEUR MyStringStatExt\n" << std::endl;
-	char* temp = new char[pn];
-
-	for (int i = 0; i < pn; i++) {
-		temp[i] = cara;
+	n = pn;
+	tab = new char[n];
+	for (int i = 0; i < n; i++) {
+		tab[i] = cara;
 	}
-	std::cout << "CONSTRUCTEUR DANS CONSTRUCTEUR MyStringStatExt supplémentaire" << std::endl;
-	new (this) MyStringStatExt(temp);
+	fcpte();
 	fcpteExt();
 }
 
@@ -324,7 +328,7 @@ void MyStringStatExt::displayStatExt(){
 MyStringStatExt MyStringStatExt::concatenationStatExt(const MyStringStatExt& s1){
 	MyStringStatExt temp;
 
-	temp.MyStringStat::operator=(MyStringStat::concatenationStat(s1));
+	temp.MyStringStat::operator=(MyStringStat::concatenationStat(s1)); // sus
 	return temp;
 }
 
@@ -333,7 +337,177 @@ void MyStringStatExt::supprimeStatExt(const char sup){
 	fcpteExt();
 }
 
+class MyStringExtExt : public MyStringStatExt {
+	public:
+		//CONSTRUCTEUR
+		MyStringExtExt();
+		MyStringExtExt(const char*);
+		MyStringExtExt(const MyStringExtExt&);
+		MyStringExtExt(const int,const char);
+
+		//OPERATOR
+		MyStringExtExt& operator=(const MyStringExtExt&);
+		MyStringExtExt operator+(const MyStringExtExt&);
+		MyStringExtExt operator-(const char);
+		MyStringExtExt operator++();
+		MyStringExtExt operator++(int);
+		MyStringExtExt operator--();
+		MyStringExtExt operator--(int);
+		char& operator[](const int);
+		char& operator[](const int) const;
+		friend std::ostream& operator<<(std::ostream&, const MyStringExtExt&);
+		MyStringExtExt operator+(const char);
+		MyStringExtExt operator+(int);
+
+		//DESTRUCTEUR
+		~MyStringExtExt();
+};
+
+MyStringExtExt::MyStringExtExt(){
+	std::cout << "CONSTRUCTEUR MyStringExtExt\n" << std::endl;
+}
+
+MyStringExtExt::MyStringExtExt(const char* tabpn) : MyStringStatExt(tabpn){
+	std::cout << "CONSTRUCTEUR MyStringExtExt\n" << std::endl;
+}
+
+MyStringExtExt::MyStringExtExt(const MyStringExtExt& s1) : MyStringStatExt(s1){
+	std::cout << "CONSTRUCTEUR MyStringExtExt\n" << std::endl;
+}
+
+MyStringExtExt::MyStringExtExt(const int pn,const char cara) : MyStringStatExt(pn,cara){
+	std::cout << "CONSTRUCTEUR MyStringExtExt\n" << std::endl;
+}
+
+MyStringExtExt::~MyStringExtExt(){
+	std::cout << "\nDESTRUCTEUR MyStringExtExt" << std::endl;
+}
+
+MyStringExtExt& MyStringExtExt::operator=(const MyStringExtExt &s1){
+	if (this != &s1){
+		this->MyStringStatExt::operator=(s1);
+	}
+	return *this;
+}
+
+MyStringExtExt MyStringExtExt::operator+(const MyStringExtExt& s1){
+	MyStringExtExt temp;
+
+	temp.MyStringStatExt::operator=(MyStringStatExt::concatenationStatExt(s1));
+	return temp;
+}
+
+MyStringExtExt MyStringExtExt::operator-(const char sup){
+	MyStringExtExt temp(*this);
+
+	temp.supprimeStatExt(sup);
+	return temp;
+}
+
+MyStringExtExt MyStringExtExt::operator++(){
+	for (int i = 0; i < n; i++) {
+		if(isalpha(tab[i])){
+			tab[i] = (char)((int)tab[i] + 1);
+		}
+	}
+	fcpteExt();
+	return *this;
+}
+
+MyStringExtExt MyStringExtExt::operator++(int){
+	MyStringExtExt temp(*this);
+
+	for (int i = 0; i < n; i++) {
+		if(isalpha(tab[i])){
+			tab[i] = (char)((int)tab[i] + 1);
+		}
+	}
+	fcpteExt();
+	return temp;
+}
+
+MyStringExtExt MyStringExtExt::operator--(){
+	for (int i = 0; i < n; i++) {
+		if(isalpha(tab[i])){
+			tab[i] = (char)((int)tab[i] - 1);
+		}
+	}
+	fcpteExt();
+	return *this;
+}
+
+MyStringExtExt MyStringExtExt::operator--(int){
+	MyStringExtExt temp(*this);
+
+	for (int i = 0; i < n; i++) {
+		if(isalpha(tab[i])){
+			tab[i] = (char)((int)tab[i] - 1);
+		}
+	}
+	fcpteExt();
+	return temp;
+}
+
+char& MyStringExtExt::operator[](const int index){
+	if (index < 0 || index >= n) {
+		throw std::out_of_range("index out of range");
+	}
+	return tab[index];
+}
+
+char& MyStringExtExt::operator[](const int index) const{
+	if (index < 0 || index >= n) {
+		throw std::out_of_range("index out of range");
+	}
+	return tab[index];
+}
+
+std::ostream &operator<<(std::ostream &os, const MyStringExtExt &s1){
+	os << s1.tab << "\n";
+	os << "Il y a " << s1.tabStat[0] << " lettres de l'alphabet\n";
+	os << "Il y a " << s1.tabStat[1] << " autres caractères\n";
+	os << "Il y a " << s1.tabStat[2] << " majuscules\n";
+	os << "Il y a " << s1.tabStat[3] << " minuscules\n";
+	os << "Il y a " << s1.tabStat[4] << " espaces\n";
+	for (int i = 0; i < 26; i++) {
+		if (s1.tabStatExt[i] != 0)
+		os << "Il y a " << s1.tabStatExt[i] << " lettres " << (char)(i+65) << "\n";
+	}
+	return os;
+}
+
+MyStringExtExt MyStringExtExt::operator+(int nb){
+	for (int i = 0; i < n; i++) {
+		if(isalpha(tab[i])){
+			tab[i] = (char)((int)tab[i] + nb);
+		}
+	}
+	fcpteExt();
+	return *this;
+}
+
+MyStringExtExt MyStringExtExt::operator+(const char cara){
+
+	char* temp;
+	temp = new char[n];
+	for (int i = 0; i < n; i++) {
+		temp[i] = tab[i];
+	}
+	delete tab;
+	tab = new char[n=n*2];
+	for (int i = 0; i < n; i++) {
+		if (i%2 == 0) {
+			tab[i] = temp[i/2];
+		}
+		else {
+			tab[i] = cara;
+		}
+	}
+	fcpte();
+	fcpteExt();
+	return *this;
+}
+
 int main()
 {
-
 }
