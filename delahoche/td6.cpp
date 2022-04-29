@@ -1,3 +1,4 @@
+#include <iterator>
 #define _USE_MATH_DEFINES
 #include <stdio.h>
 #include <math.h>
@@ -30,6 +31,8 @@ class point
 		void display();
 		void deplace(int dx, int dy);
 		void homothetie(int k);
+		int getX();
+		int getY();
 };
 
 point::point()
@@ -119,6 +122,16 @@ void point::homothetie(int k)
 	polaire();
 }
 
+int point::getX()
+{
+	return x;
+}
+
+int point::getY()
+{
+	return y;
+}
+
 class rectangle
 {
 	protected:
@@ -135,14 +148,14 @@ class rectangle
 		~rectangle();
 
 		// OPERATEURS
-		rectangle& operator=(const rectangle& r1);
+		rectangle& operator=(const rectangle&);
 
 		// METHODES
 		void display();
 		void initialise(int, int, int, int);
 		void initialise(point,int,int);
-		void homothetie(int k);
-		void deplace(const point&);
+		void homothetie(int);
+		void deplace(int,int);
 };
 
 rectangle::rectangle() : p1(0, 0), p2(0, 0)
@@ -207,7 +220,10 @@ void rectangle::homothetie(int k)
 	p2.homothetie(k);
 }
 
-void rectangle :: deplace(const point& a){
+void rectangle :: deplace(int dx, int dy)
+{
+	p1.deplace(dx, dy);
+	p2.deplace(dx, dy);
 }
 
 class bouton {
@@ -218,7 +234,7 @@ class bouton {
 
 		// CONSTRUCTEUR
 		bouton();
-		bouton(point,int,int);
+		bouton(point,int,int,char*);
 		bouton(point,point,const char*);
 		bouton(int, int, int, int, const char*);
 		bouton(const bouton&);
@@ -233,8 +249,8 @@ class bouton {
 		void display();
 		void initialise(int, int, int, int, const char*);
 		void initialise(point,int,int,const char*);
-		void homothetie(int k);
-		void deplace();
+		void homothetie(int);
+		void deplace(int,int);
 };
 
 bouton::bouton() : r(0, 0, 0, 0), txt("")
@@ -242,9 +258,10 @@ bouton::bouton() : r(0, 0, 0, 0), txt("")
 	cout << "constructeur bouton" << endl;
 }
 
-bouton::bouton(point p,int h,int l) : r(p,h,l)
+bouton::bouton(point p,int h,int l,char* t) : r(p,h,l)
 {
 	cout << "constructeur bouton" << endl;
+	txt = t;
 }
 
 bouton::bouton(point p,point p2,const char* t) : r(p,p2)
@@ -299,12 +316,82 @@ void bouton::homothetie(int k)
 	r.homothetie(k);
 }
 
-void bouton::deplace(){
+void bouton::deplace(int dx, int dy)
+{
+	r.deplace(dx,dy);
+}
 
+class menuA {
+	private:
+		point ancrage;
+		int pas;
+		bouton *tab;
+		int nb;
+	public:
+
+		// CONSTRUCTEUR
+		menuA();
+		menuA(int,int,char*);
+		menuA(int,int,int,int,int,char*);
+		menuA(int,int,int,int,int,int,int,char*);
+		menuA(const menuA&);
+
+		// DESTRUCTEUR
+		~menuA();
+
+		// OPERATEURS
+		menuA& operator=(const menuA&);
+
+		// METHODES
+		void display();
+		void initialise(int,int,char**);
+		void initialise(int,int,int,int,char**);
+};
+
+menuA :: menuA()
+{
+	cout << "constructeur menuA" << endl;
+	ancrage.initialise(0,0);
+	pas = 0;
+	tab = NULL;
+	nb = 0;
+}
+
+menuA :: menuA(int n,int anc,char** t)
+{
+	cout << "constructeur menuA" << endl;
+	ancrage.initialise(10,anc);
+	pas = 10;
+	tab = new bouton[nb];
+	nb = n;
+	for(int i=0;i<nb;i++)
+	{
+		tab[i] = bouton(i*pas+(i+1)*10,ancrage.getY(),i*pas+(i+1)*40,ancrage.getY()+10,t[i]);
+	}
+}
+
+menuA :: menuA(int n,int anc,int h,int l,int paspn,char** t){
+	cout << "constructeur menuA" << endl;
+	ancrage.initialise(paspn,anc);
+	pas = paspn;
+	tab = new bouton[nb];
+	nb = n;
+	for(int i=0;i<nb;i++)
+	{
+		tab[i] = bouton(i*pas+(i+1)*10,ancrage.getY(),i*pas+(i+1)*40,ancrage.getY()+10,t[i]);
+	}
+}
+
+void menuA :: display()
+{
+	for(int i=0;i<nb;i++)
+	{
+		tab[i].display();
+	}
 }
 
 int main()
 {
-	bouton r1(1,1,1,1,"test");
-	r1.display();
+	menuA m1(3,10);
+	m1.display();
 }
