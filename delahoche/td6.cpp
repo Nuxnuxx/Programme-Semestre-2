@@ -396,7 +396,7 @@ menuA::menuA(int nb, char* txt)
 	pas = 20;
 	for (int i = 0; i < n; i++)
 	{
-		tab[i]= bouton( pas*i+(i+1)*10, ancrage.getY(),pas*i+(i+1)*40, ancrage.getY()+20, txt);
+		tab[i]= bouton(pas*i+(i+1)*10, ancrage.getY(),pas*i+(i+1)*40, ancrage.getY()+20, txt);
 	}
 
 
