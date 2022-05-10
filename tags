@@ -43,18 +43,22 @@ Program	clecle/td1sln/pain/Program.cs	/^	 class Program$/;"	c	namespace:pain
 Program	clecle/td1sln/piratePartage/Program.cs	/^    internal class Program$/;"	c	namespace:piratePartage
 TestMethod1	clecle/td1sln/test/UnitTest1.cs	/^    public void TestMethod1()$/;"	m	class:UnitTest1
 UnitTest1	clecle/td1sln/test/UnitTest1.cs	/^public class UnitTest1$/;"	c
-_USE_MATH_DEFINES	delahoche/td6.cpp	2;"	d	file:
+_USE_MATH_DEFINES	delahoche/td6.cpp	1;"	d	file:
 addition	delahoche/td2-2.cpp	/^vecteur2 vecteur2::addition(vecteur2& v2){$/;"	f	class:vecteur2
 addition	delahoche/td2-3.cpp	/^vecteur2 vecteur2::addition(vecteur2& v2) {$/;"	f	class:vecteur2
 addition	delahoche/td2.cpp	/^vecteur1 vecteur1::addition(vecteur1& v2){$/;"	f	class:vecteur1
+affiche	delahoche/td6.cpp	/^void bouton::affiche()$/;"	f	class:bouton
+affiche	delahoche/td6.cpp	/^void menuA::affiche()$/;"	f	class:menuA
+affiche	delahoche/td6.cpp	/^void point::affiche()$/;"	f	class:point
+affiche	delahoche/td6.cpp	/^void rectangle::affiche()$/;"	f	class:rectangle
 age	clecle/td1sln/age/Program.cs	/^namespace age$/;"	n
-ancrage	delahoche/td6.cpp	/^		point ancrage;$/;"	m	class:menuA	file:
-bouton	delahoche/td6.cpp	/^bouton::bouton() : r(0, 0, 0, 0), txt("")$/;"	f	class:bouton
-bouton	delahoche/td6.cpp	/^bouton::bouton(const bouton& b1) : r(b1.r), txt(b1.txt)$/;"	f	class:bouton
-bouton	delahoche/td6.cpp	/^bouton::bouton(int px1, int py1, int px2, int py2, const char* t) : r(px1, py1, px2, py2)$/;"	f	class:bouton
-bouton	delahoche/td6.cpp	/^bouton::bouton(point p,int h,int l,char* t) : r(p,h,l)$/;"	f	class:bouton
-bouton	delahoche/td6.cpp	/^bouton::bouton(point p,point p2,const char* t) : r(p,p2)$/;"	f	class:bouton
-bouton	delahoche/td6.cpp	/^class bouton {$/;"	c	file:
+ancrage	delahoche/td6.cpp	/^	point ancrage;$/;"	m	class:menuA	file:
+bouton	delahoche/td6.cpp	/^bouton::bouton(): r()$/;"	f	class:bouton
+bouton	delahoche/td6.cpp	/^bouton::bouton(const bouton& b) : r(b.r)$/;"	f	class:bouton
+bouton	delahoche/td6.cpp	/^bouton::bouton(int x1, int y1, int x2, int y2, char* t) : r(x1, y1, x2, y2)$/;"	f	class:bouton
+bouton	delahoche/td6.cpp	/^bouton::bouton(point pm, int l, int h, char* t) : r(pm, l, h)$/;"	f	class:bouton
+bouton	delahoche/td6.cpp	/^bouton::bouton(point pm1,point pm2, char* t) : r(pm1, pm2)$/;"	f	class:bouton
+bouton	delahoche/td6.cpp	/^class bouton$/;"	c	file:
 cartesian	delahoche/td1.cpp	/^void point::cartesian(){$/;"	f	class:point
 cartesienne	delahoche/td6.cpp	/^void point::cartesienne()$/;"	f	class:point
 carx	delahoche/td1.cpp	/^		 double carx,cary;$/;"	m	class:point	file:
@@ -70,17 +74,14 @@ ctr	delahoche/td2-3.cpp	/^		static int ctr;$/;"	m	class:vecteur2	file:
 ctr	delahoche/td2-3.cpp	/^int vecteur2::ctr = 0;$/;"	m	class:vecteur2	file:
 demoPoitier	clecle/td1sln/demoPoitier/Program.cs	/^namespace demoPoitier$/;"	n
 deplace	delahoche/td6.cpp	/^void bouton::deplace(int dx, int dy)$/;"	f	class:bouton
+deplace	delahoche/td6.cpp	/^void menuA::deplace(int dx, int dy)$/;"	f	class:menuA
 deplace	delahoche/td6.cpp	/^void point::deplace(int dx, int dy)$/;"	f	class:point
-deplace	delahoche/td6.cpp	/^void rectangle :: deplace(int dx, int dy)$/;"	f	class:rectangle
+deplace	delahoche/td6.cpp	/^void rectangle::deplace(int dx, int dy)$/;"	f	class:rectangle
 display	delahoche/td1.cpp	/^void point::display(){$/;"	f	class:point
 display	delahoche/td2-2.cpp	/^void vecteur2::display(){$/;"	f	class:vecteur2
 display	delahoche/td2-3.cpp	/^void vecteur2::display() {$/;"	f	class:vecteur2
 display	delahoche/td2-4.cpp	/^void MyString::display(){$/;"	f	class:MyString
 display	delahoche/td2.cpp	/^void vecteur1::display(){$/;"	f	class:vecteur1
-display	delahoche/td6.cpp	/^void bouton::display()$/;"	f	class:bouton
-display	delahoche/td6.cpp	/^void menuA :: display()$/;"	f	class:menuA
-display	delahoche/td6.cpp	/^void point::display()$/;"	f	class:point
-display	delahoche/td6.cpp	/^void rectangle::display()$/;"	f	class:rectangle
 displayStat	delahoche/td2-4.cpp	/^void MyStringStat::displayStat(){$/;"	f	class:MyStringStat
 displayStatExt	delahoche/td2-4.cpp	/^void MyStringStatExt::displayStatExt(){$/;"	f	class:MyStringStatExt
 faff	delahoche/td2-4.cpp	/^void MyStringStat::faff(){$/;"	f	class:MyStringStat
@@ -93,6 +94,7 @@ homothetie	delahoche/td2-2.cpp	/^void vecteur2::homothetie(int x){$/;"	f	class:v
 homothetie	delahoche/td2-3.cpp	/^void vecteur2::homothetie(int x) {$/;"	f	class:vecteur2
 homothetie	delahoche/td2.cpp	/^void vecteur1::homothetie(int x){$/;"	f	class:vecteur1
 homothetie	delahoche/td6.cpp	/^void bouton::homothetie(int k)$/;"	f	class:bouton
+homothetie	delahoche/td6.cpp	/^void menuA::homothetie(int k)$/;"	f	class:menuA
 homothetie	delahoche/td6.cpp	/^void point::homothetie(int k)$/;"	f	class:point
 homothetie	delahoche/td6.cpp	/^void rectangle::homothetie(int k)$/;"	f	class:rectangle
 init	delahoche/td1.cpp	/^void point::init(double px,double py){$/;"	f	class:point
@@ -105,11 +107,12 @@ initialise	delahoche/td2-3.cpp	/^void vecteur2::initialise(int x, float* y) {$/;
 initialise	delahoche/td2.cpp	/^void vecteur1::initialise(){$/;"	f	class:vecteur1
 initialise	delahoche/td2.cpp	/^void vecteur1::initialise(int x){$/;"	f	class:vecteur1
 initialise	delahoche/td2.cpp	/^void vecteur1::initialise(int x,float y[N]){$/;"	f	class:vecteur1
-initialise	delahoche/td6.cpp	/^void bouton::initialise(int px1, int py1, int px2, int py2, const char* t)$/;"	f	class:bouton
-initialise	delahoche/td6.cpp	/^void bouton::initialise(point p, int h, int l, const char* t)$/;"	f	class:bouton
+initialise	delahoche/td6.cpp	/^void bouton::initialise(int x1, int y1, int x2, int y2, char* t)$/;"	f	class:bouton
+initialise	delahoche/td6.cpp	/^void bouton::initialise(point pm, int l, int h, char* t)$/;"	f	class:bouton
+initialise	delahoche/td6.cpp	/^void menuA::initialise(point pm, int n , int l, int h, char* txt)$/;"	f	class:menuA
 initialise	delahoche/td6.cpp	/^void point::initialise(int px, int py)$/;"	f	class:point
-initialise	delahoche/td6.cpp	/^void rectangle::initialise(int px1, int py1, int px2, int py2)$/;"	f	class:rectangle
-initialise	delahoche/td6.cpp	/^void rectangle::initialise(point p, int h, int l)$/;"	f	class:rectangle
+initialise	delahoche/td6.cpp	/^void rectangle::initialise(int x1, int y1, int x2, int y2)$/;"	f	class:rectangle
+initialise	delahoche/td6.cpp	/^void rectangle::initialise(point pm, int l,int h)$/;"	f	class:rectangle
 main	delahoche/td1.cpp	/^int main()$/;"	f
 main	delahoche/td2-2.cpp	/^int main(){$/;"	f
 main	delahoche/td2-3.cpp	/^int main() {$/;"	f
@@ -118,16 +121,18 @@ main	delahoche/td2.cpp	/^int main()$/;"	f
 main	delahoche/td6.cpp	/^int main()$/;"	f
 maj	delahoche/td2-4.cpp	/^void MyString::maj(){$/;"	f	class:MyString
 menuA	delahoche/td6.cpp	/^class menuA {$/;"	c	file:
-menuA	delahoche/td6.cpp	/^menuA :: menuA()$/;"	f	class:menuA
-menuA	delahoche/td6.cpp	/^menuA :: menuA(int n,int anc,char** t)$/;"	f	class:menuA
-menuA	delahoche/td6.cpp	/^menuA :: menuA(int n,int anc,int h,int l,int paspn,char** t){$/;"	f	class:menuA
+menuA	delahoche/td6.cpp	/^menuA::menuA()$/;"	f	class:menuA
+menuA	delahoche/td6.cpp	/^menuA::menuA(const menuA& m)$/;"	f	class:menuA
+menuA	delahoche/td6.cpp	/^menuA::menuA(int nb, char* txt)$/;"	f	class:menuA
+menuA	delahoche/td6.cpp	/^menuA::menuA(int nb, int x, int y, int l, int h, int p, char* txt)$/;"	f	class:menuA
+menuA	delahoche/td6.cpp	/^menuA::menuA(int nb, point pm, point pm2, int l, char* txt)$/;"	f	class:menuA
 min	delahoche/td2-4.cpp	/^void MyString::min(){$/;"	f	class:MyString
 move	delahoche/td1.cpp	/^void point::move(double dx, double dy){$/;"	f	class:point
 n	delahoche/td2-2.cpp	/^		int n;$/;"	m	class:vecteur2	file:
 n	delahoche/td2-3.cpp	/^		int n;$/;"	m	class:vecteur2	file:
 n	delahoche/td2-4.cpp	/^		int n;$/;"	m	class:MyString	file:
 n	delahoche/td2.cpp	/^		int n;$/;"	m	class:vecteur1	file:
-nb	delahoche/td6.cpp	/^		int nb;$/;"	m	class:menuA	file:
+n	delahoche/td6.cpp	/^	int n;$/;"	m	class:menuA	file:
 noisette	clecle/td1sln/noisette/Program.cs	/^namespace noisette$/;"	n
 operator +	delahoche/td2-4.cpp	/^MyStringExtExt MyStringExtExt::operator+(const MyStringExtExt& s1){$/;"	f	class:MyStringExtExt
 operator +	delahoche/td2-4.cpp	/^MyStringExtExt MyStringExtExt::operator+(const char cara){$/;"	f	class:MyStringExtExt
@@ -144,14 +149,15 @@ operator =	delahoche/td2-4.cpp	/^MyString& MyString::operator=(const char* tabpn
 operator =	delahoche/td2-4.cpp	/^MyStringExtExt& MyStringExtExt::operator=(const MyStringExtExt &s1){$/;"	f	class:MyStringExtExt
 operator =	delahoche/td2-4.cpp	/^MyStringStat& MyStringStat::operator=(const MyStringStat& s1){$/;"	f	class:MyStringStat
 operator =	delahoche/td2-4.cpp	/^MyStringStatExt& MyStringStatExt::operator=(const MyStringStatExt &s1){$/;"	f	class:MyStringStatExt
-operator =	delahoche/td6.cpp	/^bouton& bouton::operator=(const bouton& b1)$/;"	f	class:bouton
-operator =	delahoche/td6.cpp	/^rectangle& rectangle::operator=(const rectangle& r1)$/;"	f	class:rectangle
+operator =	delahoche/td6.cpp	/^bouton& bouton::operator=(const bouton& b)$/;"	f	class:bouton
+operator =	delahoche/td6.cpp	/^menuA& menuA::operator=(const menuA& m)$/;"	f	class:menuA
+operator =	delahoche/td6.cpp	/^rectangle& rectangle::operator=(const rectangle& r)$/;"	f	class:rectangle
 operator []	delahoche/td2-4.cpp	/^char& MyStringExtExt::operator[](const int index) const{$/;"	f	class:MyStringExtExt
 operator []	delahoche/td2-4.cpp	/^char& MyStringExtExt::operator[](const int index){$/;"	f	class:MyStringExtExt
-p1	delahoche/td6.cpp	/^		point p1, p2;$/;"	m	class:rectangle	file:
-p2	delahoche/td6.cpp	/^		point p1, p2;$/;"	m	class:rectangle	file:
+p1	delahoche/td6.cpp	/^	point p1, p2;$/;"	m	class:rectangle	file:
+p2	delahoche/td6.cpp	/^	point p1, p2;$/;"	m	class:rectangle	file:
 pain	clecle/td1sln/pain/Program.cs	/^namespace pain$/;"	n
-pas	delahoche/td6.cpp	/^		int pas;$/;"	m	class:menuA	file:
+pas	delahoche/td6.cpp	/^	int pas;$/;"	m	class:menuA	file:
 piratePartage	clecle/td1sln/piratePartage/Program.cs	/^namespace piratePartage$/;"	n
 point	delahoche/td1.cpp	/^class point{$/;"	c	file:
 point	delahoche/td1.cpp	/^point::point(){$/;"	f	class:point
@@ -159,22 +165,25 @@ point	delahoche/td1.cpp	/^point::point(double p){$/;"	f	class:point
 point	delahoche/td1.cpp	/^point::point(double px,double py){$/;"	f	class:point
 point	delahoche/td6.cpp	/^class point$/;"	c	file:
 point	delahoche/td6.cpp	/^point::point()$/;"	f	class:point
-point	delahoche/td6.cpp	/^point::point(const point& p1)$/;"	f	class:point
+point	delahoche/td6.cpp	/^point::point(const point& p)$/;"	f	class:point
 point	delahoche/td6.cpp	/^point::point(int p)$/;"	f	class:point
 point	delahoche/td6.cpp	/^point::point(int px, int py)$/;"	f	class:point
 polaire	delahoche/td6.cpp	/^void point::polaire()$/;"	f	class:point
 polar	delahoche/td1.cpp	/^void point::polar(){$/;"	f	class:point
 r	delahoche/td6.cpp	/^		rectangle r;$/;"	m	class:bouton	file:
-rectangle	delahoche/td6.cpp	/^class rectangle$/;"	c	file:
-rectangle	delahoche/td6.cpp	/^rectangle::rectangle() : p1(0, 0), p2(0, 0)$/;"	f	class:rectangle
-rectangle	delahoche/td6.cpp	/^rectangle::rectangle(const rectangle& r1) : p1(r1.p1), p2(r1.p2)$/;"	f	class:rectangle
-rectangle	delahoche/td6.cpp	/^rectangle::rectangle(int px1, int py1, int px2, int py2) : p1(px1, py1), p2(px2, py2)$/;"	f	class:rectangle
-rectangle	delahoche/td6.cpp	/^rectangle::rectangle(point p,int h,int l) : p1(p), p2(p)$/;"	f	class:rectangle
-rectangle	delahoche/td6.cpp	/^rectangle::rectangle(point p1, point p2) : p1(p1), p2(p2)$/;"	f	class:rectangle
+rectangle	delahoche/td6.cpp	/^class rectangle {$/;"	c	file:
+rectangle	delahoche/td6.cpp	/^rectangle::rectangle(): p1(0, 0), p2(0, 0)$/;"	f	class:rectangle
+rectangle	delahoche/td6.cpp	/^rectangle::rectangle(const rectangle& r) : p1(r.p1), p2(r.p2)$/;"	f	class:rectangle
+rectangle	delahoche/td6.cpp	/^rectangle::rectangle(int x1, int y1, int x2, int y2) : p1(x1, y1), p2(x2, y2)$/;"	f	class:rectangle
+rectangle	delahoche/td6.cpp	/^rectangle::rectangle(point pm , int l, int h ) : p1(pm), p2(pm)$/;"	f	class:rectangle
+rectangle	delahoche/td6.cpp	/^rectangle::rectangle(point pm1, point pm2) : p1(pm1), p2(pm2)$/;"	f	class:rectangle
 rho	delahoche/td1.cpp	/^		 double rho,theta;$/;"	m	class:point	file:
-rho	delahoche/td6.cpp	/^		double rho, theta;$/;"	m	class:point	file:
+rho	delahoche/td6.cpp	/^	double rho, theta;$/;"	m	class:point	file:
 rotate	delahoche/td1.cpp	/^void point::rotate(double alpha){$/;"	f	class:point
+rotation	delahoche/td6.cpp	/^void bouton::rotation(int alpha)$/;"	f	class:bouton
+rotation	delahoche/td6.cpp	/^void menuA::rotation(int alpha)$/;"	f	class:menuA
 rotation	delahoche/td6.cpp	/^void point::rotation(int alpha)$/;"	f	class:point
+rotation	delahoche/td6.cpp	/^void rectangle::rotation(int alpha)$/;"	f	class:rectangle
 scalaireAdresse	delahoche/td2-2.cpp	/^float vecteur2::scalaireAdresse(vecteur2* v2){$/;"	f	class:vecteur2
 scalaireAdresse	delahoche/td2-3.cpp	/^float vecteur2::scalaireAdresse(vecteur2* v2) {$/;"	f	class:vecteur2
 scalaireAdresse	delahoche/td2.cpp	/^float vecteur1::scalaireAdresse(vecteur1* v2){$/;"	f	class:vecteur1
@@ -191,13 +200,13 @@ tab	delahoche/td2-2.cpp	/^		float *tab;$/;"	m	class:vecteur2	file:
 tab	delahoche/td2-3.cpp	/^		float* tab;$/;"	m	class:vecteur2	file:
 tab	delahoche/td2-4.cpp	/^		char *tab;$/;"	m	class:MyString	file:
 tab	delahoche/td2.cpp	/^		float tab[N];$/;"	m	class:vecteur1	file:
-tab	delahoche/td6.cpp	/^		bouton *tab;$/;"	m	class:menuA	file:
+tab	delahoche/td6.cpp	/^	bouton* tab;$/;"	m	class:menuA	file:
 tabStat	delahoche/td2-4.cpp	/^		int* tabStat;$/;"	m	class:MyStringStat	file:
 tabStatExt	delahoche/td2-4.cpp	/^		int tabStatExt[26];$/;"	m	class:MyStringStatExt	file:
 td1	clecle/td1.cs	/^	class td1$/;"	c	namespace:td1
 td1	clecle/td1.cs	/^namespace td1$/;"	n
 theta	delahoche/td1.cpp	/^		 double rho,theta;$/;"	m	class:point	file:
-theta	delahoche/td6.cpp	/^		double rho, theta;$/;"	m	class:point	file:
+theta	delahoche/td6.cpp	/^	double rho, theta;$/;"	m	class:point	file:
 txt	delahoche/td6.cpp	/^		string txt;$/;"	m	class:bouton	file:
 vecteur1	delahoche/td2.cpp	/^class vecteur1{$/;"	c	file:
 vecteur1	delahoche/td2.cpp	/^vecteur1::vecteur1(){$/;"	f	class:vecteur1
@@ -214,14 +223,15 @@ vecteur2	delahoche/td2-3.cpp	/^vecteur2::vecteur2(const vecteur2& v2) {$/;"	f	cl
 vecteur2	delahoche/td2-3.cpp	/^vecteur2::vecteur2(int pn) {$/;"	f	class:vecteur2
 vecteur2	delahoche/td2-3.cpp	/^vecteur2::vecteur2(int pn, float* tableau) {$/;"	f	class:vecteur2
 x	delahoche/td1.cpp	/^		 double x,y;$/;"	m	class:point	file:
-x	delahoche/td6.cpp	/^		double x, y;$/;"	m	class:point	file:
+x	delahoche/td6.cpp	/^	double x, y;$/;"	m	class:point	file:
 y	delahoche/td1.cpp	/^		 double x,y;$/;"	m	class:point	file:
-y	delahoche/td6.cpp	/^		double x, y;$/;"	m	class:point	file:
+y	delahoche/td6.cpp	/^	double x, y;$/;"	m	class:point	file:
 ~MyString	delahoche/td2-4.cpp	/^MyString::~MyString(){$/;"	f	class:MyString
 ~MyStringExtExt	delahoche/td2-4.cpp	/^MyStringExtExt::~MyStringExtExt(){$/;"	f	class:MyStringExtExt
 ~MyStringStat	delahoche/td2-4.cpp	/^MyStringStat::~MyStringStat(){$/;"	f	class:MyStringStat
 ~MyStringStatExt	delahoche/td2-4.cpp	/^MyStringStatExt::~MyStringStatExt(){$/;"	f	class:MyStringStatExt
 ~bouton	delahoche/td6.cpp	/^bouton::~bouton()$/;"	f	class:bouton
+~menuA	delahoche/td6.cpp	/^menuA::~menuA()$/;"	f	class:menuA
 ~point	delahoche/td1.cpp	/^point::~point(){$/;"	f	class:point
 ~point	delahoche/td6.cpp	/^point::~point()$/;"	f	class:point
 ~rectangle	delahoche/td6.cpp	/^rectangle::~rectangle()$/;"	f	class:rectangle
