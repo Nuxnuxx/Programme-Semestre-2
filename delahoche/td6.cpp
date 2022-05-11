@@ -1,4 +1,3 @@
-#define _USE_MATH_DEFINES
 #include <stdio.h>
 #include <math.h>
 #include <time.h>
@@ -401,7 +400,6 @@ menuA::menuA(int nb, char* txt)
 
 
 }
-
 
 menuA::menuA(int nb, int x, int y, int l, int h, int p, char* txt)
 {

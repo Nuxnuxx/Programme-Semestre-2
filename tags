@@ -43,7 +43,6 @@ Program	clecle/td1sln/pain/Program.cs	/^	 class Program$/;"	c	namespace:pain
 Program	clecle/td1sln/piratePartage/Program.cs	/^    internal class Program$/;"	c	namespace:piratePartage
 TestMethod1	clecle/td1sln/test/UnitTest1.cs	/^    public void TestMethod1()$/;"	m	class:UnitTest1
 UnitTest1	clecle/td1sln/test/UnitTest1.cs	/^public class UnitTest1$/;"	c
-_USE_MATH_DEFINES	delahoche/td6.cpp	1;"	d	file:
 addition	delahoche/td2-2.cpp	/^vecteur2 vecteur2::addition(vecteur2& v2){$/;"	f	class:vecteur2
 addition	delahoche/td2-3.cpp	/^vecteur2 vecteur2::addition(vecteur2& v2) {$/;"	f	class:vecteur2
 addition	delahoche/td2.cpp	/^vecteur1 vecteur1::addition(vecteur1& v2){$/;"	f	class:vecteur1
